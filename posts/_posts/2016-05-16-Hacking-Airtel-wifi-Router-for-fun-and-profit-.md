@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: "The curious case of MGMNT ssid and Airtel wifi routers "
+title: "The curious case of Airtel wifi routers and MGMNT ssid"
 
 categories: hacking,router,wifi,IoT
 
