@@ -8,7 +8,11 @@ comments: true
 published: true
 ---
 
-After a long trial and error with different antennas finally I am surprised with APT signal reception from my simple ground plane antenna which is made from coat hanger.I don't no more technical stuff about antennas, My GP antenna have 22 inch long radials ( slant down at an angle of 45 degrees) [close up photo of antenna](http://i.imgur.com/rq3t1W1.jpg).
+NOAA satellite is a series of weather satellites launched by NASA. It carries a suite of instruments that provides data for weather and climate predictions, Everyday multiple NOAA weather satellites pass above us. Each NOAA weather satellite broadcasts an Automatic Picture Transmission (APT) signal (137MHZ), which contains a live weather image of our area. RTL-SDR dongle combined with a good antenna and programs like WXtoImg and GQRX we can deoode this signals.
+
+If you are not familiar with RTL-SDR, RTL-SDR is a very cheap software defined radio that uses a DVB-T TV tuner dongle based on the realtek RTL2832U chipset. Basically , this means that a cheap $20 TV tuner USB dongle with the RTL2832U chipset can be used as a computer controlled radio scanner.
+
+After a long trial and error process with different antennas finally I am surprised with APT signal reception from my simple ground plane antenna which is made from coat hanger.I don't no more technical stuff about antennas, My GP antenna have 22 inch long radials ( slant down at an angle of 45 degrees) [close up photo of antenna](http://i.imgur.com/rq3t1W1.jpg).
 
 <img src="/assets/img/noaa/ground-plane-antenna-rtlsdr.jpg">
 
