@@ -40,4 +40,4 @@ Software used is sdrsharp (RF gain 100% ,40~42khz bandwidth,90% AF gain,Sample R
 #### NOAA 15 - Sea surface temperature
 <img src="/assets/img/noaa/noaa-sea-level-rtlsdr.jpg">
 
-Also checkout my [reddit post](https://www.reddit.com/r/RTLSDR/comments/1no5sh/received_noaa_images_using_my_coat_hanger_ground/) on the same.
+discussion on [reddit ](https://www.reddit.com/r/RTLSDR/comments/1no5sh/received_noaa_images_using_my_coat_hanger_ground/).

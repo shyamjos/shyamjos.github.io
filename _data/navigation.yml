@@ -1,10 +1,10 @@
-- title: /projects
+- title: ./projects
   url: /projects
 
 
-- title: /about
+- title: ./about
   url: /about
 
-- title: /github
+- title: ./github
   url: https://github.com/shyamjos
 

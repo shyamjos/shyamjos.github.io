@@ -349,3 +349,23 @@ a[href^="//localhost:4000/"]:after {
 	color: #028002;
 	font-weight: 600;
 }
+
+
+
+.footer {
+
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  margin-top: 50px;
+  color: #777;
+  a {
+    border: none;
+    font-weight: bold;
+  }
+  padding-bottom: 6px;
+
+}
+
+
