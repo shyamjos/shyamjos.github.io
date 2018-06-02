@@ -9,8 +9,8 @@ comments: true
 
 ---
 
- Some of the wifi routers (especially beetel models) provided by airtel broadband is paired with two SSIDs(Access point), One is actual SSID for internet access and another one is MGMNT which used by airtel for maintenance / automatic configuration. 
- The default key for MGMNT is `0987654321` which is hard-coded into the router's firmware and the stupidest part is there is no option to disable it.
+ Some of the wifi routers (especially beetel models) provided by airtel broadband is paired with two SSIDs(Access point), One is an actual SSID for internet access and another one called MGMNT, which is used by airtel for maintenance / automatic configuration. 
+ The default key for MGMNT is `0987654321`, which is hard-coded into the router's firmware and the stupidest part is there is no option to disable it.
 
 ![router hacking](/assets/img/hardcoded-password-meme.jpg){: .align-right}
 
@@ -19,7 +19,7 @@ Then Navigate to `192.168.1.1` in your browser and login with the default creden
 If you are lucky now you can see a network status page (view only) 
 
 
-In recent models airtel patched a vulnerability that allows an attacker to view/change the password of the main SSID by connecting to MGMNT and browsing to the URL : `http://192.168.1.1/basic/home_wlan.htm`.Since the router i am testing was running on a patched firmware so it didn't worked.
+In recent models airtel patched a vulnerability that allows an attacker to view/change the password of the main SSID by connecting to MGMNT and browsing to the URL : `http://192.168.1.1/basic/home_wlan.htm`.Since the router i am testing was running on a patched firmware, it didn't worked.
 
 So the next option was Telnet, I was able to telnet into the router with the credentials admin/password.
 
