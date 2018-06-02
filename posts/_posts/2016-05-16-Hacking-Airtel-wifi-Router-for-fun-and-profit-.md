@@ -8,11 +8,10 @@ categories: hacking,router,wifi,IoT
 comments: true
 
 ---
-
+<img style="float: right; margin: 2px 2px 2px 2px;" src="/assets/img/hardcoded-password-meme.jpg">
  Some of the wifi routers (especially beetel models) provided by airtel broadband is paired with two SSIDs(Access point), One is an actual SSID for internet access and another one called MGMNT, which is used by airtel for maintenance / automatic configuration. 
  The default key for MGMNT is `0987654321`, which is hard-coded into the router's firmware and the stupidest part is there is no option to disable it.
 
-![router hacking](/assets/img/hardcoded-password-meme.jpg){: .align-right}
 
 Now lets start hacking!, Connect to MGMNT SSID with the key `0987654321`.
 Then Navigate to `192.168.1.1` in your browser and login with the default credentials username: admin and password: password
