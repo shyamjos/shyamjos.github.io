@@ -1,0 +1,6 @@
+# General Jekyll Config
+highlighter: rouge
+url: http://example.com
+lsi: false
+permalink: /:title/
+exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
