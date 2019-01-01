@@ -1,5 +1,11 @@
 [
 
+{"date": "Sat, 25 Nov 2017 00:00:00 +0530",
+"categories": ["arduino,IoT,linux"],
+"tags": [],
+"title": "An ansible role for sudoers file configuration",
+"url": "/an-ansible-role-for-creating-sudoers-file/"},
+
 {"date": "Sat, 03 Sep 2016 00:00:00 +0530",
 "categories": ["arduino,IoT,linux"],
 "tags": [],

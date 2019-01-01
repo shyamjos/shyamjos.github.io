@@ -4,13 +4,22 @@
  <title>The blog of Shyam Jos</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2018-12-31T00:26:34+05:30</updated>
+ <updated>2019-01-01T11:40:43+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Shyam Jos</name>
    <email>shyamjosepp@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>An ansible role for sudoers file configuration</title>
+   <link href="http://localhost:4000/an-ansible-role-for-creating-sudoers-file/"/>
+   <updated>2017-11-25T00:00:00+05:30</updated>
+   <id>http://localhost:4000/an-ansible-role-for-creating-sudoers-file</id>
+   <content type="html">
+</content>
+ </entry>
  
  <entry>
    <title>Monitoring Linux Server with an Arduino</title>

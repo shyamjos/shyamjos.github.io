@@ -2,11 +2,8 @@
 layout: post
 published: true
 title: "Monitoring Linux Server with an Arduino"
-
 categories: arduino,IoT,linux
-
 comments: true
-
 ---
 
 As usual I was so bored and wanted to build something cool on this weekend, So I ended up building an Arduino based Linux server monitoring solution for monitoring my Linux VPS.
