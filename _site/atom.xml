@@ -4,7 +4,7 @@
  <title>The blog of Shyam Jos</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000"/>
- <updated>2019-01-01T12:00:15+05:30</updated>
+ <updated>2019-01-01T12:34:35+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Shyam Jos</name>
@@ -14,7 +14,7 @@
  
  <entry>
    <title>An ansible role for sudoers file configuration</title>
-   <link href="http://localhost:4000/an-ansible-role-for-creating-sudoers-file/"/>
+   <link href="http://localhost:4000/an-ansible-role-for-creating-sudoers-file"/>
    <updated>2017-11-25T00:00:00+05:30</updated>
    <id>http://localhost:4000/an-ansible-role-for-creating-sudoers-file</id>
    <content type="html">
@@ -23,7 +23,7 @@
  
  <entry>
    <title>Monitoring Linux Server with an Arduino</title>
-   <link href="http://localhost:4000/monitoring-linux-server-with-arduino/"/>
+   <link href="http://localhost:4000/monitoring-linux-server-with-arduino"/>
    <updated>2016-09-03T00:00:00+05:30</updated>
    <id>http://localhost:4000/monitoring-linux-server-with-arduino</id>
    <content type="html">&lt;p&gt;As usual I was so bored and wanted to build something cool on this weekend, So I ended up building an Arduino based Linux server monitoring solution for monitoring my Linux VPS.&lt;/p&gt;
@@ -48,7 +48,7 @@
  
  <entry>
    <title>The curious case of Airtel wifi routers and MGMNT ssid</title>
-   <link href="http://localhost:4000/Hacking-Airtel-wifi-Router-for-fun-and-profit/"/>
+   <link href="http://localhost:4000/Hacking-Airtel-wifi-Router-for-fun-and-profit"/>
    <updated>2016-05-16T00:00:00+05:30</updated>
    <id>http://localhost:4000/Hacking-Airtel-wifi-Router-for-fun-and-profit-</id>
    <content type="html">&lt;p&gt;&lt;img style=&quot;float: right; margin: 2px 2px 2px 2px;&quot; src=&quot;/assets/img/hardcoded-password-meme.jpg&quot; /&gt;
@@ -87,7 +87,7 @@ If you are lucky now you can see a network status page (view only)&lt;/p&gt;
  
  <entry>
    <title>Update Raspberry pi firmware from Kali Linux</title>
-   <link href="http://localhost:4000/How-to-update-raspberrypi-firmware-in-kali-linux/"/>
+   <link href="http://localhost:4000/How-to-update-raspberrypi-firmware-in-kali-linux"/>
    <updated>2015-06-22T00:11:00+05:30</updated>
    <id>http://localhost:4000/How-to-update-raspberrypi-firmware-in-kali-linux</id>
    <content type="html">&lt;p&gt;We can easily update Raspberry pi firmware in raspbian by running the command rpi-update, But in kali linux we dont have rpi-update command by default.
@@ -109,7 +109,7 @@ For more Expert options visit the &lt;a href=&quot;https://github.com/Hexxeh/rpi
  
  <entry>
    <title>Testing different DIY antennas for RTLSDR</title>
-   <link href="http://localhost:4000/testing-different-antennas-for-rtlsdr/"/>
+   <link href="http://localhost:4000/testing-different-antennas-for-rtlsdr"/>
    <updated>2014-04-02T00:11:00+05:30</updated>
    <id>http://localhost:4000/testing-different-antennas-for-rtlsdr</id>
    <content type="html">&lt;p&gt;I have been experimenting with different DIY antennas for RTLSDR since 2013,Below is my review on different antennas I have tested so far.&lt;/p&gt;
@@ -131,7 +131,7 @@ For more Expert options visit the &lt;a href=&quot;https://github.com/Hexxeh/rpi
  
  <entry>
    <title>Decoding NASA's NOAA weather satellite signals with RTL-SDR</title>
-   <link href="http://localhost:4000/decoding-noaa-weather-satellite-apt-signals-with-RTL-SDR/"/>
+   <link href="http://localhost:4000/decoding-noaa-weather-satellite-apt-signals-with-RTL-SDR"/>
    <updated>2013-10-03T00:11:00+05:30</updated>
    <id>http://localhost:4000/decoding-noaa-weather-satellite-apt-signals-with-RTL-SDR</id>
    <content type="html">&lt;p&gt;NOAA satellite is a series of weather satellites launched by NASA. It carries a suite of instruments that provides data for weather and climate predictions, Everyday multiple NOAA weather satellites pass above us. Each NOAA weather satellite broadcasts an Automatic Picture Transmission (APT) signal (137MHZ), which contains a live weather image of our area. RTL-SDR dongle combined with a good antenna and programs like sdrsharp and WXtoImg we can decode this signals.

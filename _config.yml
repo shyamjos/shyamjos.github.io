@@ -2,5 +2,5 @@
 highlighter: rouge
 url: http://example.com
 lsi: false
-permalink: /:title/
+permalink: /:title
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
