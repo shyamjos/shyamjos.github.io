@@ -1,0 +1,35 @@
+{{ define "header" }}
+  {{ partial "header.html" . }}
+{{ end }}
+
+{{ define "content" }}
+
+  <div class="post-list">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" site.Params.mainSections) 20 }}
+    {{ range (.Paginator 20).Pages }}
+      {{ if .Draft }}
+        {{ .Scratch.Set "draftPage" true }}
+      {{ else }}
+        {{ .Scratch.Set "draftPage" false }}
+      {{ end }}
+     <li>
+  <span class="list__title--small">
+    <a href="{{ .RelPermalink }}" {{if .Draft}}class="draft"{{end}}>{{ .Title }}</a>
+      {{if not .Date.IsZero}}
+      <time class="pull-right hidden-tablet">{{ .Date.Format (.Site.Params.dateformat | default "Jan 02 '06") }}</time>
+      {{end}}
+  </span>
+</li>
+        {{ .Scratch.Delete "draftPage" }}
+     {{ end }}
+  </div>
+  {{ partial "pagination.html" . }}
+{{ end }}
+
+{{ define "footer" }}
+  {{ if .Site.GoogleAnalytics }}
+    <!-- Google Analytics -->
+    {{ template "_internal/google_analytics_async.html" . }}
+  {{ end }}
+  {{ partial "footer/font-awesome-js.html" . }}
+{{ end }}

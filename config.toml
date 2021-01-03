@@ -1,0 +1,56 @@
+## Basic Configuration
+baseurl = "https://shyamjos.com/"
+languageCode = "en"
+title = "ShyamJos.com"
+theme = "hyde-hyde"
+
+## Hugo Built-in Features
+disqusShortname = "shyamjos"
+googleAnalytics = "UA-50871470-1"
+enableRobotsTXT = true
+summarylength = 0
+
+
+[Permalinks]
+	blog = "/:filename/"
+
+
+## Site Settings
+[params]
+    title = "Shyam Jos" 
+    author = "Shyam Jos"
+    description = "Random Bits From A DevOps Engineer"
+    authorimage = "/assets/img/shyam_jos_photo.jpeg"
+    dateformat = "2 Jan, 2006"
+
+    # sidebar, copyright & license
+    copyright = "Shyam Jos"
+    showBuiltWith = true
+
+    # https://highlightjs.org
+    highlightjs = true
+    highlightjsstyle = "github"
+    #Other options
+    relatedPosts= true
+    postNavigation = false
+
+## Social Accounts
+[params.social]
+    github = "shyamjos"
+    linkedin = "shyamjos"
+    twitter = "shyamjose"
+    stackoverflow = "2460764"
+    email = "shyamjosepp+website@gmail.com"
+
+## Main Menu
+[[menu.main]]
+    name = "blog"
+    weight = 100
+    identifier = "blog"
+    url = "/"
+[[menu.main]]
+    name = "about"
+    identifier = "about"
+    weight = 200
+    url = "/about/"
+
