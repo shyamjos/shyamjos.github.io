@@ -1,5 +1,5 @@
 ## Basic Configuration
-baseurl = "https://shyamjos.com/"
+baseurl = "https://shyamjos.com"
 languageCode = "en"
 title = "ShyamJos.com"
 theme = "hyde-hyde"
