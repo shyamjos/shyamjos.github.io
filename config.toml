@@ -25,7 +25,7 @@ summarylength = 0
 
     # sidebar, copyright & license
     copyright = "Shyam Jos"
-    showBuiltWith = true
+    showBuiltWith = false
 
     # https://highlightjs.org
     highlightjs = true
@@ -33,6 +33,12 @@ summarylength = 0
     #Other options
     relatedPosts= true
     postNavigation = false
+
+## Meta Tags
+[params.meta]
+    description = "Hey I am Shyam Jos. Welcome to my personal blog, where I write about Linux, DevOps, Cloud and Automation."
+    keywords = "DevOps,linux,cloud,automation,sysadmin,blog"
+    
 
 ## Social Accounts
 [params.social]
