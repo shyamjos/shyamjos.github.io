@@ -30,9 +30,10 @@ summarylength = 0
     # https://highlightjs.org
     highlightjs = true
     highlightjsstyle = "github"
+    
     #Other options
     relatedPosts= true
-    postNavigation = false
+    postNavigation = true
 
 ## Meta Tags
 [params.meta]
