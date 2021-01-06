@@ -3,7 +3,7 @@ date: 2016-05-16
 linktitle: "The curious case of Airtel wifi routers and MGMNT ssid"
 title: "The curious case of Airtel wifi routers and MGMNT ssid"
 weight: 10
-categories: [ "infosec","iot"]
+tags: [ "infosec","iot"]
 ---
 
 

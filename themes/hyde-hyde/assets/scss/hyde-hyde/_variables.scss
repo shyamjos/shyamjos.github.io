@@ -34,7 +34,7 @@ $body-bg: #fff;
 $border-color: #e5e5e5;
 
 $large-breakpoint: 38em;
-$large-font-size: 19px;
+$large-font-size: 17px;
 $font-scale-dot7: .7rem;
 $font-scale-dot8: .8rem;
 //
@@ -80,8 +80,8 @@ $item__title-big-font-size: 1.0rem;
 
 // heading
 $heading-font-weight: 501;
-$h1-font-size: 1.5rem;
-$h1-line-height: 2.2rem;
+$h1-font-size: 1.2rem;
+$h1-line-height: 1.5rem;
 $h2-font-size: 1.0rem;
 $h3-font-size: .8rem;
 $h4-font-size:.7rem;
@@ -95,7 +95,7 @@ $site__title-font-size: 1.4rem;
 $copyright-font-size: $font-scale-dot7;
 
 // content
-$content-max-width: 38rem; // @ ~70 CPL
+$content-max-width: 42rem; // @ ~70 CPL
 $content-margin-left: $sidebar-width + 2rem;
 $content-margin-right: 2rem;
 

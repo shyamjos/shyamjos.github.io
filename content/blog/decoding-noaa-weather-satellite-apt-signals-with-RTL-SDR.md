@@ -3,7 +3,7 @@ date: 2013-10-03
 linktitle: "Decoding NASA's NOAA weather satellite signals with RTL-SDR"
 title: "Decoding NASA's NOAA weather satellite signals with RTL-SDR"
 weight: 10
-categories: [ "rtlsdr"]
+tags: [ "rtlsdr"]
 ---
 
 NOAA satellite is a series of weather satellites launched by NASA. It carries a suite of instruments that provides data for weather and climate predictions, everyday multiple NOAA weather satellites pass above us. Each NOAA weather satellite broadcasts an Automatic Picture Transmission (APT) signal (137MHZ), which contains a live weather image of our area. RTL-SDR dongle combined with a good antenna and programs like GQRX, sdrsharp and WXtoImg we can decode this signals.

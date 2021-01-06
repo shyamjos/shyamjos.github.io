@@ -3,7 +3,7 @@ date: 2016-09-03
 linktitle: "Monitoring Linux Server with an Arduino"
 title: "Monitoring Linux Server with an Arduino"
 weight: 10
-categories: [ "iot","linux"]
+tags: [ "iot","linux"]
 ---
 
 

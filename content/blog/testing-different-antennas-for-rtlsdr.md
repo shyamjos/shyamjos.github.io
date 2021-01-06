@@ -3,7 +3,7 @@ date: 2014-04-02
 linktitle: "Testing different DIY antennas for RTLSDR"
 title: "Testing different DIY antennas for RTLSDR"
 weight: 10
-categories: [ "rtlsdr"]
+tags: [ "rtlsdr"]
 ---
 
 I have been experimenting with different DIY antennas for RTLSDR since 2013,Below is my review on different antennas I have tested so far.

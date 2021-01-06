@@ -3,7 +3,7 @@ date: 2014-04-02
 linktitle: "Update Raspberry pi firmware from Kali Linux"
 title: "Update Raspberry pi firmware from Kali Linux"
 weight: 10
-categories: [ "infosec","linux"]
+tags: [ "infosec","linux"]
 ---
 
 
