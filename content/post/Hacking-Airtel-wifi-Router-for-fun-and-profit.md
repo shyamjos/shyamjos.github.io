@@ -1,6 +1,6 @@
 ---
 date: 2016-05-16
-title: "The curious case of Airtel wifi routers and MGMNT ssid"
+title: "Insecure Airtel wifi routers with MGMNT ssid"
 tags: [ "infosec","iot"]
 ---
 
@@ -8,7 +8,7 @@ tags: [ "infosec","iot"]
  Some of the wifi routers (especially beetel models) provided by airtel broadband is paired with two SSIDs(Access point), One is an actual SSID for internet access and another one called MGMNT, which is used by airtel for maintenance / automatic configuration. 
  The default key for MGMNT is `0987654321`, which is hard-coded into the router's firmware and the stupidest part is there is no option to disable it.
 
-![password meme](/assets/img/hardcoded-password-meme.jpg)
+![password meme](/assets/img/airtel/hardcoded-password-meme.jpg)
 
 Now lets start hacking!, Connect to MGMNT SSID with the key `0987654321`.
 Then Navigate to `192.168.1.1` in your browser and login with the default credentials username: admin and password: password
@@ -22,18 +22,18 @@ So the next option was Telnet, I was able to telnet into the router with the cre
 ```
 Telnet 192.168.1.1
 ```
-![hacking router](/assets/img/wifi-router-hacking.png  "Airtel router telnet ")
+![hacking router](/assets/img/airtel/wifi-router-hacking.png  "Airtel router telnet ")
 
 Bingo! after playing with telnet for sometime I found the password for main SSID by typing the command:
 
 ```
 show wlan config
 ```
-![router password](/assets/img/airtel-wifi-password.png  "hacking airtel wifi password ")
+![router password](/assets/img/airtel/airtel-wifi-password.png  "hacking airtel wifi password ")
 
 I was also able to hack another airtel router in a coffee shop with my andriod phone using [terminal emulator app](https://play.google.com/store/apps/details?id=jackpal.androidterm&hl=en).
 
-![router hacking](/assets/img/airtel-wifi-android-hacking.png)
+![router hacking](/assets/img/airtel/airtel-wifi-android-hacking.png)
 
 airtel patched vulnerability in web interface but forgot to patch telnet service which is accessible through the MGMNT ssid , An attacker can use the default user account which has full privilege to view and modify router configuration via telnet.
 

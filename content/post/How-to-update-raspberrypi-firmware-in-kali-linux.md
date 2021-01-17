@@ -1,5 +1,5 @@
 ---
-date: 2014-04-02
+date: 2015-08-09
 title: "Update Raspberry pi firmware from Kali Linux"
 tags: [ "infosec","linux"]
 ---

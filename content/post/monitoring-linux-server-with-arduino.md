@@ -13,7 +13,7 @@ The idea was Simple, use an Arduino Ethernet module to make a get request to the
 And here is the demo of Arduino Linux monitor in action
 
 ## Demo 
-![Arduino lcd](/assets/img/arduino-lcd.gif)
+![Arduino lcd](/assets/img/arduino-monitor/arduino-lcd.gif)
 
 
 If you are interested in this project you can download the Arduino sketch from my [github page](https://github.com/shyamjos/Arduino_ServerMon). 
