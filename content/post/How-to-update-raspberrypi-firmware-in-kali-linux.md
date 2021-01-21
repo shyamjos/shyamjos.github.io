@@ -3,7 +3,7 @@ date: 2015-08-09
 title: "Update Raspberry pi firmware from Kali Linux"
 tags: [ "infosec","linux"]
 ---
-
+![flashing rpi](/assets/img/rpi/rpi-firmware.webp)
 
 We can easily update Raspberry pi firmware in raspbian by running the command rpi-update, But in kali linux we dont have rpi-update command by default.
 <br><br>
