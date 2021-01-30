@@ -12,7 +12,7 @@ summarylength = 0
 
 
 [Permalinks]
-	blog = "/:filename/"
+	post = "/:title"
 
 
 ## Site Settings
