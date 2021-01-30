@@ -2,7 +2,6 @@
 date: 2017-05-14
 title: "A better email template for icinga2"
 tags: [ "monitoring"]
-draft: true
 ---
 
 I have created a very simple HTML email alert Template for Icinga 2 to replace the default boring text-based email alert. This template can be easily installed by replacing existing alert scripts inside /etc/icinga2/scripts.

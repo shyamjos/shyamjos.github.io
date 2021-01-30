@@ -1,6 +1,6 @@
 ---
-date: 2021-01-16
+date: 1947-01-16
 title: "Hello world!"
-tags: [ "example"]
+tags: [ "tag1","tag2"]
 draft: true
 ---

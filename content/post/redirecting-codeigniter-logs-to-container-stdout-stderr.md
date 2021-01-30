@@ -13,7 +13,7 @@ strangely the log path config in CodeIgniter is a combination of file path + fil
 
 After some digging on google. I found out that there is no easy way to set custom static log path in CodeIgniter and I also found an [open feature request](https://github.com/bcit-ci/CodeIgniter/issues/5648) for this issue which is not yet implemented by CodeIgniter team :(
 
-Luckily I was able to fix the issue by modifiying codigniter logging module which is located at `system/core/Log.php`, I am not sure if this is an optimal solution , just in-case if you are stuck with similar issue give it a try! 
+Luckily I was able to fix the issue by modifying CodeIgniter logging module which is located at `system/core/Log.php`, I am not sure if this is an optimal solution , just in-case if you are stuck with similar issue give it a try! 
 
 Firstly I removed the file path and file extension check conditions from below code block (`system/core/Log.php`)
 
