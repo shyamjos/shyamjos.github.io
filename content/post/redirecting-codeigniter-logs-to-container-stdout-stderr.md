@@ -1,6 +1,6 @@
 ---
 date: 2021-01-20
-title: "Redirecting CodeIgniter logs to container's STDOUT and STDERR"
+title: "How to redirect CodeIgniter logs to container's STDOUT and STDERR"
 tags: [ "container", "logging"]
 ---
 As part of migrating applications from EC2 instance to kubernetes I was assigned with a task of containerizing a CodeIgniter application. once the application was containerized I noticed that the application logs were writing to a local file inside the container. so I thought this can be easily fixed by changing the logging path in CodeIgniter config file to `php://stdout`. 
