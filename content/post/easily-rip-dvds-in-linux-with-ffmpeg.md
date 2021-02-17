@@ -1,6 +1,9 @@
 ---
 date: 2018-10-03
 title: "Ripping DVDs in linux with FFmpeg"
+description: "In this tutorial, I will show you a simple way to RIP DVD into a single file using FFmpeg command line tool in Linux."
+images:
+- /assets/img/dvd-ripping/dvd-linux.webp
 tags: [ "linux"]
 ---
 ![dvd ripping in linux](/assets/img/dvd-ripping/dvd-linux.webp)

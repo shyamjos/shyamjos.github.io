@@ -3,7 +3,7 @@ date: 2013-10-03
 title: "Decoding NASA's NOAA weather satellite signals with RTL-SDR"
 description: "A small blog post about decoding NASA's NOAA weather satellite signals with RTL-SDR"
 images:
-- /assets/img/noaa/rtlsdr-dongle-noaa.jpg
+- /assets/img/noaa/rtlsdr-dongle.jpg
 tags: [ "rtlsdr"]
 ---
 

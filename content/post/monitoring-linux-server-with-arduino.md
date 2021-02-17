@@ -1,6 +1,9 @@
 ---
 date: 2016-09-03
 title: "Monitoring Linux Server with an Arduino"
+description: "I ended up building an Arduino based Linux server monitoring solution for monitoring my Linux VPS"
+images:
+- /assets/img/arduino-monitor/arduino-lcd.gif
 tags: [ "iot","linux"]
 ---
 

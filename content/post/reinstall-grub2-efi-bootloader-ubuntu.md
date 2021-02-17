@@ -1,6 +1,9 @@
 ---
 date: 2017-08-24
 title: "How to reinstall grub2 efi bootloader on ubuntu"
+description: "In this tutorial I will show you how to reinstall grub2 bootloader on a ubuntu system with efi partition."
+images:
+- /assets/img/featured.jpg
 tags: [ "linux","ubuntu"]
 ---
 In this tutorial I will show you how to reinstall grub2 bootloader on a ubuntu system with efi partition.
