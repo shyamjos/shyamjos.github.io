@@ -5,6 +5,7 @@ description: "I ended up building an Arduino based Linux server monitoring solut
 images:
 - /assets/img/arduino-monitor/arduino-lcd.gif
 tags: [ "iot","linux"]
+keywords: ["linux", "iot", "arduino", "Monitoring"]
 ---
 
 

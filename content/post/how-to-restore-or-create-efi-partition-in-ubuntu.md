@@ -5,6 +5,7 @@ description: "What Type of file system is used in EFI partition ? EFI partition 
 images:
 - /assets/img/featured.jpg
 tags: [ "linux","ubuntu"]
+keywords: ["efi", "partition", "ubuntu"]
 ---
 
 ## What Type of file system is used in EFI partition ?

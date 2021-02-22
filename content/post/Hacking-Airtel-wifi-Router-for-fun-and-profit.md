@@ -5,6 +5,7 @@ description: "In recent models airtel patched a vulnerability that allows an att
 images:
 - /assets/img/airtel/wifi-router-hacking.png
 tags: [ "infosec","iot"]
+keywords: ["wifi", "airtel", "router", "vulnerability", "insecure"]
 ---
 
 

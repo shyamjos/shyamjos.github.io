@@ -5,6 +5,7 @@ description: "I have created a very simple HTML email alert Template for Icinga 
 images:
 - /assets/img/icinga2/html-template-for-icinga.png
 tags: [ "monitoring"]
+keywords: ["icinga", "icinga2", "template", "theme", "email"]
 ---
 
 I have created a very simple HTML email alert Template for Icinga 2 to replace the default boring text-based email alert. This template can be easily installed by replacing existing alert scripts inside /etc/icinga2/scripts.

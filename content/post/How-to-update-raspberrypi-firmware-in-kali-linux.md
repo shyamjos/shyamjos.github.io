@@ -5,6 +5,7 @@ description: "update Raspberry pi firmware in raspbian by running the command rp
 images:
 - /assets/img/rpi/rpi-firmware.webp
 tags: [ "infosec","linux"]
+keywords: ["linux", "kali", "firmware", "Raspberry pi", "rpi"]
 ---
 ![flashing rpi](/assets/img/rpi/rpi-firmware.webp)
 

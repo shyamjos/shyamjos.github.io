@@ -5,6 +5,7 @@ description: "In this tutorial I will show you how to reinstall grub2 bootloader
 images:
 - /assets/img/featured.jpg
 tags: [ "linux","ubuntu"]
+keywords: ["grub2", "grub", "reinstall", "linux", "ubuntu", "efi partition"]
 ---
 In this tutorial I will show you how to reinstall grub2 bootloader on a ubuntu system with efi partition.
 

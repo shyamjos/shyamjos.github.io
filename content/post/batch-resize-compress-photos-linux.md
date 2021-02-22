@@ -5,6 +5,7 @@ description: "In this tutorial I will show you how to batch resize and compress 
 images:
 - /assets/img/ImageMagick/retro-camera-black.jpg
 tags: [ "linux","bash","automation"]
+keywords: ["script", "ImageMagick", "linux", "resize"]
 ---
 ![retro cmaer](/assets/img/ImageMagick/retro-camera-black.jpg)
 In this tutorial I will show you how to batch resize and compress images in Ubuntu or in any other Linux distros(debian,arch and fedora).

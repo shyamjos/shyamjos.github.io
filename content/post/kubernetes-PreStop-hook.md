@@ -1,10 +1,11 @@
 ---
 date: 2021-01-25
-title: "Handling pod interruptions caused by HPA scale-down using PreStop hook"
+title: "Handling HPA scale down using PreStop hook"
 description: "Kubernetes provides container lifecycle hook framework to run code triggered by events during their management lifecycle called PostStart and PreStop hooks"
 images:
 - /assets/img/featured.jpg
 tags: [ "kubernetes","container"]
+keywords: ["kubernetes", "PreStop hook", "hpa", "scaling"]
 ---
 One of our application running in kubernetes have a background job feature (which is a bad practice and against stateless architecture) and recently we noticed some of these background jobs were killed in midway due to pod scale-down done by horizontal pod autoscaler. Our assumption was Kubernetes will only terminate pods with less utilization but we were wrong! and its a random selection. 
 

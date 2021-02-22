@@ -5,6 +5,7 @@ description: "In this tutorial, I will show you a simple way to RIP DVD into a s
 images:
 - /assets/img/dvd-ripping/dvd-linux.webp
 tags: [ "linux"]
+keywords: ["ripping", "dvd", "FFmpeg", "linux"]
 ---
 ![dvd ripping in linux](/assets/img/dvd-ripping/dvd-linux.webp)
 In this tutorial, I will show you a simple way to RIP DVD into a single file using FFmpeg command line tool in Linux.

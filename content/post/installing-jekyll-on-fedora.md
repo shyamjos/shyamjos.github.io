@@ -5,6 +5,7 @@ description: "Follow below steps to install jekyll on fedora"
 images:
 - /assets/img/misc/jekyll-logo-linux.png
 tags: [ "fedora","linux"]
+keywords: ["fedora", "linux", "Jekyll"]
 ---
 ![jekyll logo linux](/assets/img/misc/jekyll-logo-linux.png)
 Follow below steps to install jekyll on fedora
