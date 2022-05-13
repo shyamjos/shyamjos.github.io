@@ -6,7 +6,6 @@ theme = "hyde-hyde"
 
 ## Hugo Built-in Features
 disqusShortname = "shyamjos"
-googleAnalytics = "UA-50871470-1"
 enableRobotsTXT = true
 summarylength = 0
 
