@@ -1,5 +1,5 @@
 ---
-date: 2021-01-20
+date: 2021-08-20
 title: "Redirect CodeIgniter logs to container's STDOUT/ERR"
 description: " I found out that there is no easy way to set custom static log path in CodeIgniter"
 images:

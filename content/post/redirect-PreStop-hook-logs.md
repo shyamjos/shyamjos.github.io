@@ -1,5 +1,5 @@
 ---
-date: 2021-01-31
+date: 2021-09-25
 title: "How to redirect PreStop hook output to pod logs"
 description: "So how can we see the PreStop hook command output in pod logs? By default container engine only redirects the stdout/err of the main process"
 images:
