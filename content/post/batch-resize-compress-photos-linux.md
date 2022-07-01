@@ -1,5 +1,5 @@
 ---
-date: 2019-09-19
+date: 2020-09-19
 title: "How to batch resize and compress images in linux"
 description: "In this tutorial I will show you how to batch resize and compress images in Ubuntu or in any other Linux distros(debian,arch and fedora)"
 images:
