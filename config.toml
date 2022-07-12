@@ -1,7 +1,7 @@
 ## Basic Configuration
 baseurl = "https://shyamjos.com/"
 languageCode = "en"
-title = "ShyamJos.com"
+title = "Shyam Jos"
 theme = "hyde-hyde"
 
 ## Hugo Built-in Features
@@ -18,7 +18,7 @@ summarylength = 0
 [params]
     title = "Shyam Jos" 
     author = "Shyam Jos"
-    description = "Random Bits From A DevOps Engineer"
+    description = "Random Bits From A SRE/DevOps Engineer"
     authorimage = "/assets/img/shyam_jos_photo.jpeg"
     dateformat = "2 Jan, 2006"
 
