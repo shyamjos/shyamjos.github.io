@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 {{ hugo.Generator }}
 {{ if .IsHome }}
-    {{ $.Scratch.Set "theTitle" .Site.Title }}
+    {{ $.Scratch.Add "theTitle" .Site.Params.author}}
 {{else}}
     {{ $.Scratch.Set "theTitle" .Title}}
 {{ end }}
