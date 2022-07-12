@@ -7,8 +7,6 @@
     {{ $.Scratch.Set "theTitle" .Site.Title }}
 {{else}}
     {{ $.Scratch.Set "theTitle" .Title}}
-    {{ $.Scratch.Add "theTitle" " - "}}
-    {{ $.Scratch.Add "theTitle" .Site.Title}}
 {{ end }}
 <title>{{ $.Scratch.Get "theTitle" }}</title>
 {{ with .Site.Params.meta.description }}<meta name="description" content="{{ . }}">{{ end }}
