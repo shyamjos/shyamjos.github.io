@@ -6,6 +6,7 @@
     <div class="post">
         <h1>{{ .Title }}</h1>
         {{ .Content }}
+        {{ partial "newsletter.html" . }}
         {{ partial "support.html" . }}
   </div>
 {{ end }}
