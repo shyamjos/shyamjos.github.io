@@ -5,8 +5,8 @@
 {{ define "content" }}
 
   <div class="post-list">
-    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" site.Params.mainSections) 20 }}
-    {{ range (.Paginator 20).Pages }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" site.Params.mainSections) 30 }}
+    {{ range (.Paginator 30).Pages }}
       {{ if .Draft }}
         {{ .Scratch.Set "draftPage" true }}
       {{ else }}

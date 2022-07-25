@@ -32,7 +32,7 @@ summarylength = 0
     
     #Other options
     relatedPosts= true
-    postNavigation = true
+    postNavigation = false
 
 ## Meta Tags
 [params.meta]

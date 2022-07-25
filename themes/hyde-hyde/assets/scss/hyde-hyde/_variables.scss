@@ -19,7 +19,7 @@ $blue: #1a1c22;
 $brown: #8f5536;
 
 //https://www.client9.com/css-system-font-stack-sans-serif-v3
-$root-font-family: "roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
+$root-font-family: "roboto serif", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Droid Sans", "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol";
 
 // poole's variables
 $root-font-size: 17px;
@@ -28,7 +28,7 @@ $root-font-weight: 400;
 // 18px @ 33 px, 20px @ 33 px ~ 1.667em
 $root-line-height: 1.667em;
 
-$body-color: $gray-8;
+$body-color: #000000;
 $body-bg: #fff;
 
 $border-color: #e5e5e5;
@@ -36,7 +36,7 @@ $border-color: #e5e5e5;
 $large-breakpoint: 38em;
 $large-font-size: 17px;
 $font-scale-dot7: .7rem;
-$font-scale-dot8: .8rem;
+$font-scale-dot8: .9rem;
 //
 
 // hyde-hyde
@@ -44,7 +44,7 @@ $small-device-font-size: $root-font-size;
 $large-device-font-size: $large-font-size;
 
 // https://www.client9.com/css-system-font-stack-monospace-v2
-$code-font-family: "SFMono-Regular", "SF-Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Roboto Mono", "Ubuntu Mono", "Courier New", Courier, monospace;
+$code-font-family: "Source Code Pro", "SF-Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Roboto Mono", "Ubuntu Mono", "Courier New", Courier, monospace;
 $code-font-size: .9rem;
 $code-fence-font-size: .8rem;
 //$code-color: #bf616a;
@@ -52,8 +52,8 @@ $code-fence-font-size: .8rem;
 $code-line-height: 1.4;
 
 // links
-$link-color: #000;
-$link-hover-color: $body-color;
+$link-color: #646464;
+$link-hover-color: #000;
 
 // section
 $section__title-font-size: 2.15rem;
@@ -65,16 +65,16 @@ $gradient-color-2: #7a5e91;
 
 // post meta
 $meta-font-size: $font-scale-dot8;
-$meta-font-weight: 300;
-$meta-color: $gray-6;
+$meta-font-weight: 400;
+$meta-color: #000;
 
 // post tags
 $tag-background-color: $gray-2;
-$tag-color: #606570;
+$tag-color: #464646;
 $tag-font-size: .667rem;
 
 // list of posts
-$item__date-color: #9a9a9a;
+$item__date-color: #bebebe;
 $item__date-font-size: 1rem;
 $item__title-big-font-size: 1.0rem;
 
