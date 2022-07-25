@@ -20,7 +20,7 @@ summarylength = 0
     author = "Shyam Jos"
     description = "Random Bits From A SRE/DevOps Engineer"
     authorimage = "/assets/img/shyam_jos_photo.jpeg"
-    dateformat = "2 Jan, 2006"
+    dateformat = "2 Jan 2006"
 
     # sidebar, copyright & license
     copyright = "Shyam Jos"

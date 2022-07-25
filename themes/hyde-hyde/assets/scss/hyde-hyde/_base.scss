@@ -102,7 +102,7 @@ kbd {
 a {
 	//border-bottom: 1px dotted;
 	color: $link-color;
-	text-decoration: underline dotted grey;
+	text-decoration: none;
 	word-wrap: break-word;
 	&.sidebar-nav-item {
 		&:hover {
