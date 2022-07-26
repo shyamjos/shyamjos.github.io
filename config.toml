@@ -5,7 +5,7 @@ title = "Shyam Jos"
 theme = "hyde-hyde"
 
 ## Hugo Built-in Features
-disqusShortname = "shyamjos"
+#disqusShortname = "shyamjos"
 enableRobotsTXT = true
 summarylength = 0
 
