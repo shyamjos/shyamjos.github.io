@@ -2,7 +2,7 @@
 <div class="post__meta">
     <!-- published date -->
     {{ if not .Date.IsZero }}
-      <i class="fas fa-calendar-alt"></i>     {{ .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") }}
+      <i class="fas fa-calendar-alt" style="padding-right:1px;"></i> {{ .Date.Format (.Site.Params.dateformat | default "Jan 02, 2006") }}
     {{ end }}
     <!-- categories -->
     {{ with .Params.categories }}
@@ -11,7 +11,7 @@
           in
           {{ $total := sub $total 1 }}
           {{ range $i, $cat := sort . }}
-              <a class="badge badge-category" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ $cat | upper }}</a>
+              <a class="badge badge-category" style="padding-right:1px;" href="{{ "/categories/" | relURL }}{{ $cat | urlize }}">{{ $cat | upper }}</a>
               {{ if lt $i $total }}•{{ end }}
           {{ end }}
       {{ end }}
@@ -23,12 +23,12 @@
           <br/>
           {{ $subtotal := sub $total 1 }} <i class="fas fa-tags"></i>
           {{ range $i, $tag := . }}
-          <a class="badge badge-tag" href="{{ "/tags/" | relURL }}{{ $tag | urlize }}">{{ $tag | lower }}</a>
+          <a class="badge badge-tag" style="padding-right:1px;" href="{{ "/tags/" | relURL }}{{ $tag | urlize }}">{{ $tag | lower }}</a>
           {{ if lt $i $subtotal }} {{ end }}
       {{ end }}
     {{ end }}
     {{ end }}
     <br/>
-    <i class="fas fa-clock"></i> {{ .ReadingTime }} min read
+    <i class="fas fa-clock" style="padding-right:1px;"></i> {{ .ReadingTime }} min read
 </div>
 {{ end }}
