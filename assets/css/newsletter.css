@@ -17,7 +17,6 @@
 
  .top-text-center {
  text-align:center;
- font-size:18px;
 }
 
 
@@ -32,7 +31,7 @@
   background-color: #555; /* Green */
   border: none;
   color: white;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -41,14 +40,18 @@
     
   .email {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
+  padding: 6px 10px;
+  margin: 4px 0;
+  font-size: 16px;
+  }
+  
+  .email-label {
+  font-size: 14px;
   }
   
   .asterisk {
   color: #e85c41;
-font-size: 150%;
+font-size: 18px;
 font-weight: normal;
 position: relative;
 top: 5px;
