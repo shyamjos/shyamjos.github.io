@@ -24,7 +24,7 @@ Then, to update your rpi firmware, run the following command:
 sudo rpi-update
 ```
 
-Now restart your rpi to new frimware to take effect.
+Now restart your rpi to new firmware to take effect.
 <br>
 For more Expert options visit the [rpi-update project page](https://github.com/Hexxeh/rpi-update)
 

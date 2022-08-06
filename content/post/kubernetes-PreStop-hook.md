@@ -28,7 +28,7 @@ if [ -z "$(ls -A /app/demo-web/public/lock/*.lock 2> /dev/null)" ]; then
    echo "No lock files found!, container is safe to terminate [Time Elapsed: ${SECONDS}s]."
    exit 0
 else
-   echo "Lock files found!, waiting for backgound process to complete [Time Elapsed: ${SECONDS}s]."
+   echo "Lock files found!, waiting for background process to complete [Time Elapsed: ${SECONDS}s]."
    sleep 10
 fi
 done > /proc/1/fd/1 # sent outputs to conatiner's stdout

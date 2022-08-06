@@ -28,7 +28,7 @@ Note: First you have to find the partition name where ubuntu is installed, You c
 
 Note: You have to replace the sda with device name of your HDD, In most cases it is sda, assuming that you have only one hard disk installed.
 
-Note: If you get any errors while trying to mount your efi partition (`/dev/sda1`), You may need to reformat your efi partition, Incase if it got corrupted or if you  accidently formatted it. [Follow this tutorial to restore or reformat your efi partition](https://linuxsuperuser.com/how-to-restore-or-create-efi-partition-in-ubuntu/).
+Note: If you get any errors while trying to mount your efi partition (`/dev/sda1`), You may need to reformat your efi partition, In case if it got corrupted or if you  accidentally formatted it. [Follow this tutorial to restore or reformat your efi partition](https://linuxsuperuser.com/how-to-restore-or-create-efi-partition-in-ubuntu/).
 
 Open terminal and enter below command\
 ```

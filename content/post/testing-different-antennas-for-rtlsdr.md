@@ -13,7 +13,7 @@ I have been experimenting with different DIY antennas for RTLSDR since 2013,Belo
 ## For decoding NOAA weather satellite Signals 
 Quadrifilar Helix (QFH) Antenna is the most recommended antenna for APT signal reception, But I was too lazy to build one. So i decided to make a ground plane antenna with coat hanger. In my opinion GP antenna is the simplest and easy to make antenna for decoding APT signals.[Check out my NOAA images](http://shyamjos.com/decoding-noaa-weather-satellite-apt-signals-with-RTL-SDR) decoded with coat hanger GP antenna. 
 
-## For decoding adb signals (tracking aircrafts)
+## For decoding adb signals (tracking aircraft)
 Coaxial Collinear Antenna is the best antenna for long range adb signal reception,[On this page](https://www.balarad.net/) there is a good tutorial for making Coaxial Collinear Antenna.
 
 ## For decoding AIS signals (tracking ships)

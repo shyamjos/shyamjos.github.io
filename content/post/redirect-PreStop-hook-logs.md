@@ -7,11 +7,11 @@ images:
 tags: [ "logging","kubernetes","container"]
 keywords: ["PreStop hook", "kubernetes", "container", "logging"]
 ---
-You might have noticed that command output of PreStop hook wont appear in pod logs and only thing you can see is whether the PreStop hook command failed or not is by checking kubernetes events log. 
+You might have noticed that command output of PreStop hook won't appear in pod logs and only thing you can see is whether the PreStop hook command failed or not is by checking kubernetes events log. 
 
 So how can we see the PreStop hook command output in pod logs? 
 
-By default container engine only redirects the stdout/err of the main process (running with `PID 1`) to the logging driver. Since the PreStop hook runs as a separate process the output from this command wont appear in container logs.
+By default container engine only redirects the stdout/err of the main process (running with `PID 1`) to the logging driver. Since the PreStop hook runs as a separate process the output from this command won't appear in container logs.
 
 ## How to redirect PreStop hook command output to container logs ?
 
