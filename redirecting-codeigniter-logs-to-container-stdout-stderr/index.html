@@ -1,12 +1,84 @@
-<!doctype html><html lang=en><head><link href=https://gmpg.org/xfn/11 rel=profile><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta name=generator content="Hugo 0.75.1"><title>Redirect CodeIgniter logs to container's STDOUT/ERR</title><meta name=description content="Hey I am Shyam Jos. Welcome to my personal blog, where I write about Linux, DevOps, Cloud and Automation."><meta name=keywords content="DevOps,linux,cloud,automation,sysadmin,blog"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://shyamjos.com/assets/img/logs/giphy.webp"><meta name=twitter:title content="Redirect CodeIgniter logs to container's STDOUT/ERR"><meta name=twitter:description content="I found out that there is no easy way to set custom static log path in CodeIgniter"><meta property="og:title" content="Redirect CodeIgniter logs to container's STDOUT/ERR"><meta property="og:description" content="I found out that there is no easy way to set custom static log path in CodeIgniter"><meta property="og:type" content="article"><meta property="og:url" content="https://shyamjos.com/redirecting-codeigniter-logs-to-container-stdout-stderr/"><meta property="og:image" content="https://shyamjos.com/assets/img/logs/giphy.webp"><meta property="article:published_time" content="2021-08-20T00:00:00+00:00"><meta property="article:modified_time" content="2021-08-20T00:00:00+00:00"><meta property="og:site_name" content="Shyam Jos"><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css><link rel=stylesheet href=/scss/hyde-hyde.35a98fefa83287f1692a7af0748e939e41145deb14f1e58f2b289491b84812dd.css integrity="sha256-NamP76gyh/FpKnrwdI6TnkEUXesU8eWPKyiUkbhIEt0="><link rel=stylesheet href=/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58+TzH3icCkSHGoJ+ed7w=" media=print><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script><script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]--><link rel=apple-touch-icon-precomposed sizes=144x144 href=/assets/img/apple-touch-icon.png><link rel="shortcut icon" href=/assets/img/favicon.ico><link rel=stylesheet href=/assets/css/newsletter.css><script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!==0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"shyamjosepp@gmail.com",utcoffset:"6"}))};sessionStorage.setItem("_swa","1");</script></head><body><div class=sidebar><div class=container><div class=sidebar-about><span class=site__title><a href=https://shyamjos.com/>Shyam Jos</a></span><div class=author-image><img src=https://shyamjos.com/assets/img/shyam_jos_photo.jpeg alt="Author Image" class="img--circle img--headshot element--center"></div><p class=site__description>Random Bits From A SRE/DevOps Engineer</p></div><div class=collapsible-menu><input type=checkbox id=menuToggle>
-<label for=menuToggle>Shyam Jos</label><div class=menu-content><div><ul class=sidebar-nav><li><a href=/><span>Blog</span></a></li><li><a href=/about/><span>About</span></a></li></ul></div><section class=social><a href=https://twitter.com/shyamjose rel=me><i class="fab fa-twitter fa-lg" aria-hidden=true></i></a><a href=https://github.com/shyamjos rel=me><i class="fab fa-github fa-lg" aria-hidden=true></i></a><a href=https://linkedin.com/in/shyamjos rel=me><i class="fab fa-linkedin fa-lg" aria-hidden=true></i></a><a href=https://stackoverflow.com/users/2460764 rel=me><i class="fab fa-stack-overflow fa-lg" aria-hidden=true></i></a><a href=mailto:shyamjosepp+website@gmail.com rel=me><i class="fas fa-at fa-lg" aria-hidden=true></i></a></section></div></div><div class=copyright>&copy; 2022 Shyam Jos</div></div></div><div class="content container"><article><header><h1>Redirect CodeIgniter logs to container's STDOUT/ERR</h1><div class=post__meta><i class="fas fa-calendar-alt" style=padding-right:2px></i>20 Aug 2021<br><i class="fas fa-tags"></i><a class="badge badge-tag" style=padding-right:1px href=/tags/container>container</a>
-<a class="badge badge-tag" style=padding-right:1px href=/tags/logging>logging</a><br><i class="fas fa-clock" style=padding-right:2px></i>4 min read</div></header><div class=post><p>As part of migrating applications from EC2 instance to kubernetes I was assigned with a task of containerizing a CodeIgniter application. once the application was containerized I noticed that the application logs were writing to a local file inside the container. so I thought this can be easily fixed by changing the logging path in CodeIgniter config file to <code>php://stdout</code>.</p><p>But it was not that easy!!</p><p><img src=/assets/img/logs/giphy.webp alt=logging></p><p>strangely the log path config in CodeIgniter is a combination of file path + file extension, so if I set the file path as <code>php://stdout</code> and left the file extension part blank, the application will throw an error <code>'Use a full server path with trailing slash'</code>.</p><p>After some digging on google. I found out that there is no easy way to set custom static log path in CodeIgniter and I also found an <a href=https://github.com/bcit-ci/CodeIgniter/issues/5648>open feature request</a> for this issue which is not yet implemented by CodeIgniter team :(</p><p>Luckily I was able to fix the issue by modifying CodeIgniter logging module which is located at <code>system/core/Log.php</code>, I am not sure if this is an optimal solution , just in-case if you are stuck with similar issue give it a try!</p><p>Firstly I removed the file path and file extension check conditions from below code block (<code>system/core/Log.php</code>)</p><pre><code>public function __construct()
+<!doctype html><html lang=en>
+<head>
+<link href=https://gmpg.org/xfn/11 rel=profile>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
+<meta name=generator content="Hugo 0.93.3">
+<title>Redirect CodeIgniter logs to container's STDOUT/ERR</title><meta name=description content="Hey I am Shyam Jos. Welcome to my personal blog, where I write about Linux, DevOps, Cloud and Automation.">
+<meta name=keywords content="DevOps,linux,cloud,automation,sysadmin,blog">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://shyamjos.com/assets/img/logs/giphy.webp">
+<meta name=twitter:title content="Redirect CodeIgniter logs to container's STDOUT/ERR">
+<meta name=twitter:description content=" I found out that there is no easy way to set custom static log path in CodeIgniter">
+<meta property="og:title" content="Redirect CodeIgniter logs to container's STDOUT/ERR">
+<meta property="og:description" content=" I found out that there is no easy way to set custom static log path in CodeIgniter">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://shyamjos.com/redirecting-codeigniter-logs-to-container-stdout-stderr/"><meta property="og:image" content="https://shyamjos.com/assets/img/logs/giphy.webp"><meta property="article:section" content="post">
+<meta property="article:published_time" content="2021-08-20T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-08-20T00:00:00+00:00"><meta property="og:site_name" content="Shyam Jos">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css>
+<link rel=stylesheet href=/scss/hyde-hyde.9b73eed3365e0428f1d3e83334e49b32658041c057b59f501476f1fd26a261df.css integrity="sha256-m3Pu0zZeBCjx0+gzNOSbMmWAQcBXtZ9QFHbx/SaiYd8=">
+<link rel=stylesheet href=/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58+TzH3icCkSHGoJ+ed7w=" media=print><!--[if lt IE 9]><script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script>
+<script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script><![endif]-->
+<link rel=apple-touch-icon-precomposed sizes=144x144 href=/assets/img/apple-touch-icon.png>
+<link rel="shortcut icon" href=/assets/img/favicon.ico>
+<link rel=stylesheet href=/assets/css/newsletter.css>
+<script>!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!==0&&fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"shyamjosepp@gmail.com",utcoffset:"6"})),sessionStorage.setItem("_swa","1")</script>
+</head><body>
+<div class=sidebar>
+<div class=container>
+<div class=sidebar-about>
+<span class=site__title>
+<a href=https://shyamjos.com/>
+Shyam Jos
+</a>
+</span>
+<div class=author-image>
+<img src=https://shyamjos.com/assets/img/shyam_jos_photo.jpeg alt="Author Image" class="img--circle img--headshot element--center">
+</div><p class=site__description>
+Random Bits From A SRE/DevOps Engineer
+</p></div><div class=collapsible-menu>
+<input type=checkbox id=menuToggle>
+<label for=menuToggle>Shyam Jos</label>
+<div class=menu-content>
+<div>
+<ul class=sidebar-nav>
+<li>
+<a href=/>
+<span>Blog</span>
+</a>
+</li><li>
+<a href=/about/>
+<span>About</span>
+</a>
+</li></ul></div><section class=social>
+<a href=https://twitter.com/shyamjose rel=me><i class="fab fa-twitter fa-lg" aria-hidden=true></i></a>
+<a href=https://github.com/shyamjos rel=me><i class="fab fa-github fa-lg" aria-hidden=true></i></a>
+<a href=https://linkedin.com/in/shyamjos rel=me><i class="fab fa-linkedin fa-lg" aria-hidden=true></i></a>
+<a href=https://stackoverflow.com/users/2460764 rel=me><i class="fab fa-stack-overflow fa-lg" aria-hidden=true></i></a>
+<a href=mailto:shyamjosepp+website@gmail.com rel=me><i class="fas fa-at fa-lg" aria-hidden=true></i></a>
+</section></div></div><div class=copyright>
+&copy; 2022 Shyam Jos
+</div></div></div><div class="content container">
+<article>
+<header>
+<h1>Redirect CodeIgniter logs to container's STDOUT/ERR</h1><div class=post__meta>
+<i class="fas fa-calendar-alt" style=padding-right:2px></i> 20 Aug 2021
+<br>
+<i class="fas fa-tags"></i>
+<a class="badge badge-tag" style=padding-right:1px href=/tags/container>container</a>
+<a class="badge badge-tag" style=padding-right:1px href=/tags/logging>logging</a>
+<br>
+<i class="fas fa-clock" style=padding-right:2px></i> 4 min read
+</div></header><div class=post>
+<p>As part of migrating applications from EC2 instance to kubernetes I was assigned with a task of containerizing a CodeIgniter application. once the application was containerized I noticed that the application logs were writing to a local file inside the container. so I thought this can be easily fixed by changing the logging path in CodeIgniter config file to <code>php://stdout</code>.</p><p>But it was not that easy!!</p><p><img src=/assets/img/logs/giphy.webp alt=logging></p><p>strangely the log path config in CodeIgniter is a combination of file path + file extension, so if I set the file path as <code>php://stdout</code> and left the file extension part blank, the application will throw an error <code>'Use a full server path with trailing slash'</code>.</p><p>After some digging on google. I found out that there is no easy way to set custom static log path in CodeIgniter and I also found an <a href=https://github.com/bcit-ci/CodeIgniter/issues/5648>open feature request</a> for this issue which is not yet implemented by CodeIgniter team :(</p><p>Luckily I was able to fix the issue by modifying CodeIgniter logging module which is located at <code>system/core/Log.php</code>, I am not sure if this is an optimal solution , just in-case if you are stuck with similar issue give it a try!</p><p>Firstly I removed the file path and file extension check conditions from below code block (<code>system/core/Log.php</code>)</p><pre tabindex=0><code>public function __construct()
 	{
 		$config =&amp; get_config();
 
-		$this-&gt;_log_path = ($config['log_path'] !== '') ? $config['log_path'] : APPPATH.'logs/';
-		$this-&gt;_file_ext = (isset($config['log_file_extension']) &amp;&amp; $config['log_file_extension'] !== '')
-			? ltrim($config['log_file_extension'], '.') : 'php';
+		$this-&gt;_log_path = ($config[&#39;log_path&#39;] !== &#39;&#39;) ? $config[&#39;log_path&#39;] : APPPATH.&#39;logs/&#39;;
+		$this-&gt;_file_ext = (isset($config[&#39;log_file_extension&#39;]) &amp;&amp; $config[&#39;log_file_extension&#39;] !== &#39;&#39;)
+			? ltrim($config[&#39;log_file_extension&#39;], &#39;.&#39;) : &#39;php&#39;;
 
 		file_exists($this-&gt;_log_path) OR mkdir($this-&gt;_log_path, 0755, TRUE);
 
@@ -15,39 +87,39 @@
 			$this-&gt;_enabled = FALSE;
 		}
 
-		if (is_numeric($config['log_threshold']))
+		if (is_numeric($config[&#39;log_threshold&#39;]))
 		{
-			$this-&gt;_threshold = (int) $config['log_threshold'];
+			$this-&gt;_threshold = (int) $config[&#39;log_threshold&#39;];
 		}
-		elseif (is_array($config['log_threshold']))
+		elseif (is_array($config[&#39;log_threshold&#39;]))
 		{
 			$this-&gt;_threshold = 0;
-			$this-&gt;_threshold_array = array_flip($config['log_threshold']);
+			$this-&gt;_threshold_array = array_flip($config[&#39;log_threshold&#39;]);
 		}
 
-		if ( ! empty($config['log_date_format']))
+		if ( ! empty($config[&#39;log_date_format&#39;]))
 		{
-			$this-&gt;_date_fmt = $config['log_date_format'];
+			$this-&gt;_date_fmt = $config[&#39;log_date_format&#39;];
 		}
 
-		if ( ! empty($config['log_file_permissions']) &amp;&amp; is_int($config['log_file_permissions']))
+		if ( ! empty($config[&#39;log_file_permissions&#39;]) &amp;&amp; is_int($config[&#39;log_file_permissions&#39;]))
 		{
-			$this-&gt;_file_permissions = $config['log_file_permissions'];
+			$this-&gt;_file_permissions = $config[&#39;log_file_permissions&#39;];
 		}
 	}
-</code></pre><p>This is how the code block looks after removing all the checks</p><pre><code>	public function __construct()
+</code></pre><p>This is how the code block looks after removing all the checks</p><pre tabindex=0><code>	public function __construct()
 	{
 		$config =&amp; get_config();
 
 			$this-&gt;_enabled = TRUE;
 	}
-</code></pre><p>Now you need to replace below line</p><pre><code>$filepath = $this-&gt;_log_path.'log-'.date('Y-m-d').'.'.$this-&gt;_file_ext;
-</code></pre><p>with this line (use a static file path instead of a dynamic one)</p><pre><code>$filepath = $this-&gt;_log_path;
-</code></pre><p>Now find and remove the below block code from the file (used for changing permission of log file, not needed in our case)</p><pre><code>		if (isset($newfile) &amp;&amp; $newfile === TRUE)
+</code></pre><p>Now you need to replace below line</p><pre tabindex=0><code>$filepath = $this-&gt;_log_path.&#39;log-&#39;.date(&#39;Y-m-d&#39;).&#39;.&#39;.$this-&gt;_file_ext;
+</code></pre><p>with this line (use a static file path instead of a dynamic one)</p><pre tabindex=0><code>$filepath = $this-&gt;_log_path;
+</code></pre><p>Now find and remove the below block code from the file (used for changing permission of log file, not needed in our case)</p><pre tabindex=0><code>		if (isset($newfile) &amp;&amp; $newfile === TRUE)
 		{
 			chmod($filepath, $this-&gt;_file_permissions);
 		}
-</code></pre><p>And finally make changes to the CodeIgniter main config file (<code>application/config/config.php</code>) as below</p><pre><code>/*
+</code></pre><p>And finally make changes to the CodeIgniter main config file (<code>application/config/config.php</code>) as below</p><pre tabindex=0><code>/*
 |--------------------------------------------------------------------------
 | Error Logging Threshold
 |--------------------------------------------------------------------------
@@ -65,11 +137,11 @@
 |
 | 	array(2) = Debug Messages, without Error Messages
 |
-| For a live site you'll usually only enable Errors (1) to be logged otherwise
+| For a live site you&#39;ll usually only enable Errors (1) to be logged otherwise
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 4;
+$config[&#39;log_threshold&#39;] = 4;
 
 /*
 |--------------------------------------------------------------------------
@@ -80,21 +152,21 @@ $config['log_threshold'] = 4;
 | application/logs/ directory. Use a full server path with trailing slash.
 |
 */
-$config['log_path'] = 'php://stdout';
+$config[&#39;log_path&#39;] = &#39;php://stdout&#39;;
 
 /*
 |--------------------------------------------------------------------------
 | Log File Extension
 |--------------------------------------------------------------------------
 |
-| The default filename extension for log files. The default 'php' allows for
+| The default filename extension for log files. The default &#39;php&#39; allows for
 | protecting the log files via basic scripting, when they are to be stored
 | under a publicly accessible directory.
 |
-| Note: Leaving it blank will default to 'php'.
+| Note: Leaving it blank will default to &#39;php&#39;.
 |
 */
-$config['log_file_extension'] = '';
+$config[&#39;log_file_extension&#39;] = &#39;&#39;;
 
 /*
 |--------------------------------------------------------------------------
@@ -106,7 +178,7 @@ $config['log_file_extension'] = '';
 | IMPORTANT: This MUST be an integer (no quotes) and you MUST use octal
 |            integer notation (i.e. 0700, 0644, etc.)
 */
-$config['log_file_permissions'] = '';
+$config[&#39;log_file_permissions&#39;] = &#39;&#39;;
 
 /*
 |--------------------------------------------------------------------------
@@ -117,7 +189,7 @@ $config['log_file_permissions'] = '';
 | codes to set your own date formatting
 |
 */
-$config['log_date_format'] = '';
+$config[&#39;log_date_format&#39;] = &#39;&#39;;
 
 /*
 |--------------------------------------------------------------------------
@@ -128,7 +200,19 @@ $config['log_date_format'] = '';
 | application/views/errors/ directory.  Use a full server path with trailing slash.
 |
 */
-$config['error_views_path'] = '';
-
-</code></pre><p>Once these changes are deployed you will be able to the see the application logs in container&rsquo;s STDOUT and STDERR logs (docker/kubernetes logs).</p></div><div id=mc_embed_signup class=newsletter><form action="https://shyamjos.us11.list-manage.com/subscribe/post?u=965be0bf90a8bd031bf02e3d2&id=2c71c7959b&f_id=00ad91e0f0" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=validate target=_blank novalidate><div id=mc_embed_signup_scroll><h2 class=top-text-center>Subscribe to my weekly Newsletter</h2><div class=indicates-required><span class=asterisk>*</span> indicates required</div><div class=mc-field-group><label for=mce-EMAIL class=email-label>Email Address <span class=asterisk>*</span></label>
-<input type=email name=EMAIL class=email id=mce-EMAIL></div><div style=position:absolute;left:-5000px aria-hidden=true><input type=text name=b_965be0bf90a8bd031bf02e3d2_2c71c7959b tabindex=-1></div><div class=optionalParent><div class="clear foot"><input type=submit value=Subscribe name=subscribe id=mc-embedded-subscribe class=button><p class=bottom-text-center>No spam or ads. Unsubscribe whenever you want.</p></div></div></div></form></div><p></p><script type=text/javascript src=https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js data-name=bmc-button data-slug=shyamjos data-color=#deddda data-emoji data-font=Bree data-text="Buy me a coffee" data-outline-color=#000000 data-font-color=#000000 data-coffee-color=#FFDD00></script></article></div><script defer src=https://use.fontawesome.com/releases/v5.12.1/js/all.js integrity=sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js></script><script type=text/javascript>hljs.initHighlightingOnLoad();</script></body></html>
+$config[&#39;error_views_path&#39;] = &#39;&#39;;
+</code></pre><p>Once these changes are deployed you will be able to the see the application logs in container&rsquo;s STDOUT and STDERR logs (docker/kubernetes logs).</p></div><div id=mc_embed_signup class=newsletter>
+<form action="https://shyamjos.us11.list-manage.com/subscribe/post?u=965be0bf90a8bd031bf02e3d2&id=2c71c7959b&f_id=00ad91e0f0" method=post id=mc-embedded-subscribe-form name=mc-embedded-subscribe-form class=validate target=_blank novalidate>
+<div id=mc_embed_signup_scroll>
+<h2 class=top-text-center>Subscribe to my weekly Newsletter</h2><div class=indicates-required><span class=asterisk>*</span> indicates required</div><div class=mc-field-group>
+<label for=mce-EMAIL class=email-label>Email Address <span class=asterisk>*</span>
+</label>
+<input type=email name=EMAIL class=email id=mce-EMAIL>
+</div><div style=position:absolute;left:-5000px aria-hidden=true><input type=text name=b_965be0bf90a8bd031bf02e3d2_2c71c7959b tabindex=-1></div><div class=optionalParent>
+<div class="clear foot">
+<input type=submit value=Subscribe name=subscribe id=mc-embedded-subscribe class=button>
+<p class=bottom-text-center> No spam or ads. Unsubscribe whenever you want.</p></div></div></div></form></div><p></p><script type=text/javascript src=https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js data-name=bmc-button data-slug=shyamjos data-color=#deddda data-emoji data-font=Bree data-text="Buy me a coffee" data-outline-color=#000000 data-font-color=#000000 data-coffee-color=#FFDD00></script>
+</article></div><script defer src=https://use.fontawesome.com/releases/v5.12.1/js/all.js integrity=sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js></script>
+<script type=text/javascript>hljs.initHighlightingOnLoad()</script>
+</body></html>
