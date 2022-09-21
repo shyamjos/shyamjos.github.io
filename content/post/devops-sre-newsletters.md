@@ -3,12 +3,10 @@ date: 2022-09-21
 title: "A hand picked list of DevOps/SRE Newsletters"
 description: "Here is a list of hand picked newsletters related to DevOps and SRE "
 images:
-- /assets/img/featured.jpg
+- /assets/img/newsletter/newsletters-photo.jpg
 tags: [ "DevOps","SRE"]
 keywords: ["DevOps", "SRE"]
 ---
-
-![newsletters](/assets/img/newsletter/newsletters-photo.jpg)
 I often get messages from colleagues and friends how I keep myself updated with DevOps/SRE related news and articles, So today I am going to disclose my secret sources :wink: .
 
 Here is a the list of my top  newsletters related to DevOps and SRE 
