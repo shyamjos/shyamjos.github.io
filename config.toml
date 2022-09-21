@@ -8,7 +8,7 @@ theme = "hyde-hyde"
 #disqusShortname = "shyamjos"
 enableRobotsTXT = true
 summarylength = 0
-
+enableEmoji=true
 
 [Permalinks]
 	post = "/:filename"
