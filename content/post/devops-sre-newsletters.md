@@ -35,6 +35,6 @@ Here is a the list of my top  newsletters related to DevOps and SRE
 
 [HN digest](https://www.hndigest.com/) : Daily email with top Hacker News stories 
 
-[hackernewsletter](https://hackernewsletter.com/) : Weekly email with top Hacker News stories]
+[hackernewsletter](https://hackernewsletter.com/) : Weekly email with top Hacker News stories
 
 That's it for now, I will try to keep this post updated with new newsletters as I find them.
