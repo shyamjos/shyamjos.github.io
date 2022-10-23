@@ -1,6 +1,7 @@
 ---
 date: 2014-04-02
 title: "Testing different DIY antennas for RTLSDR"
+slug: testing-different-antennas-for-rtlsdr
 description: "I have been experimenting with different DIY antennas for RTLSDR since 2013,Below is my review on different antennas I have tested so far."
 images:
 - /assets/img/rtlsdr/rtlsdr-antenna.webp

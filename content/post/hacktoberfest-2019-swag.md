@@ -1,6 +1,7 @@
 ---
 date: 2019-12-03
 title: "Yay! Received my 2019 hacktoberfest swag"
+slug: hacktoberfest-2019-swag
 description: "finally received my 2018 hacktoberfest swag"
 images:
 - /assets/img/swag/hacktoberfest-2019-swag.jpg

@@ -1,6 +1,7 @@
 ---
 date: 2017-05-14
 title: "A better email template for icinga2"
+slug: icinga2-html-template
 description: "I have created a very simple HTML email alert Template for Icinga 2 to replace the default boring text-based email alert"
 images:
 - /assets/img/icinga2/html-template-for-icinga.png

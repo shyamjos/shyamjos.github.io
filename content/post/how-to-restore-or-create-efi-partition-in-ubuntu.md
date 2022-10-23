@@ -1,6 +1,7 @@
 ---
 date: 2017-08-24
 title: "How to create or restore efi partition in ubuntu"
+slug: how-to-restore-or-create-efi-partition-in-ubuntu
 description: "What Type of file system is used in EFI partition ? EFI partition in Ubuntu is basically a FAT partition with label `EFI`"
 images:
 - /assets/img/featured.jpg

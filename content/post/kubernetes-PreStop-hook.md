@@ -1,6 +1,7 @@
 ---
 date: 2021-09-30
 title: "HPA - How to gracefully scale down pods with PreStop hooks"
+slug: kubernetes-PreStop-hook
 description: "Kubernetes provides container lifecycle hook framework to run code triggered by events during their management lifecycle called PostStart and PreStop hooks"
 images:
 - /assets/img/featured.jpg

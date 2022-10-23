@@ -1,6 +1,7 @@
 ---
 date: 2021-08-20
 title: "Redirect CodeIgniter logs to container's STDOUT/ERR"
+slug: redirecting-codeigniter-logs-to-container-stdout-stderr
 description: " I found out that there is no easy way to set custom static log path in CodeIgniter"
 images:
 - /assets/img/logs/giphy.webp

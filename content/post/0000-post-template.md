@@ -1,6 +1,7 @@
 ---
 date: 1947-01-16
 title: "Hello world!"
+slug: change-me-change-mechange-mechange-mechange-mechange-mechange-mechange-mechange-mechange-mechange-mechange-mechange-mechange-mechange-me
 description: "About Hello world!"
 images:
 - /assets/img/featured.jpg

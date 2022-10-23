@@ -1,6 +1,7 @@
 ---
 date: 2022-09-21
 title: "A hand picked list of DevOps/SRE Newsletters"
+slug: devops-sre-newsletters
 description: "Here is a list of hand picked newsletters related to DevOps and SRE "
 images:
 - /assets/img/newsletter/newsletters-photo.jpg

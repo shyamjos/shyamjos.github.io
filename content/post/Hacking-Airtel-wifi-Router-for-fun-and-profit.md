@@ -1,6 +1,7 @@
 ---
 date: 2016-05-16
 title: "Insecure Airtel wifi routers with MGMNT ssid"
+slug: Hacking-Airtel-wifi-Router-for-fun-and-profit
 description: "In recent models airtel patched a vulnerability that allows an attacker to view/change the password of the main SSID by connecting to MGMNT"
 images:
 - /assets/img/airtel/wifi-router-hacking.png

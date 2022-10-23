@@ -1,6 +1,7 @@
 ---
 date: 2015-08-09
 title: "Update Raspberry pi firmware from Kali Linux"
+slug: How-to-update-raspberrypi-firmware-in-kali-linux
 description: "update Raspberry pi firmware in raspbian by running the command rpi-update"
 images:
 - /assets/img/rpi/rpi-firmware.webp
