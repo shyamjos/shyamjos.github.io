@@ -18,6 +18,7 @@ sudo apt-get install ffmpeg
 ```
 
 Now copy contents of your DVD to local directory and cd into **VIDEO_TS** directory 
+
 **Note:** If you want to RIP the DVD directly without copying it to the local directory first , then you need to modify last part of the below commands to : /home/your-username/myvideo/rip.mp4
 
 ## 1\. RIP DVD into a single file
