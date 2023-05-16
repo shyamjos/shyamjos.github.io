@@ -3,6 +3,7 @@
   <div class="container {{ with .Site.Params.sidebarSticky }}sidebar-sticky{{ end }}">
     <div class="sidebar-about">
       <span class="site__title">
+      <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dee330a02ff14c38b8c26d66bcb77bbe"}'></script><!-- End Cloudflare Web Analytics -->
         <a href="{{ .Site.BaseURL }}">
         {{ with .Site.Params.logoimage }}
         {{ $strippedSlash := ($.Site.Params.logoimage | replaceRE "^(/)+(.*)" "$2") }}
