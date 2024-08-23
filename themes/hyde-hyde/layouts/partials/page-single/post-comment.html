@@ -1,5 +1,5 @@
 {{ if ne .Params.showcomments false }}
-    {{ if .Site.DisqusShortname }}
+    {{ if .Site.Config.Services.Disqus.Shortname }}
         {{ partial "page-single/comment/disqus.html" . }}
     {{ else if .Site.Params.GraphCommentId }}
         {{ partial "page-single/comment/graphcomment.html" . }}
