@@ -60,3 +60,11 @@ enableEmoji=true
     weight = 200
     url = "/about/"
 
+
+[outputs]
+  home = ['html', 'rss']
+  section = ['html']
+  taxonomy = ['html']
+  term = ['html']
+
+
