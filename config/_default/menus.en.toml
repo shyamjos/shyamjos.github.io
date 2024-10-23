@@ -1,0 +1,21 @@
+[[main]]
+name = "Posts"
+pageRef = "posts"
+weight = 10
+
+[[main]]
+name = "Notes"
+pageRef = "notes"
+weight = 20
+
+[[main]]
+name = "About"
+pageRef = "about"
+weight = 30
+
+[[main]]
+identifier = "appearance"
+weight = 99
+[main.params]
+action = "appearance"
+# icon = "appearance"

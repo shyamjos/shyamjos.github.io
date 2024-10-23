@@ -1,0 +1,20 @@
+## Site Config
+baseurl = "https://shyamjos.com/"
+title = "Shyam Jos"
+theme = "congo"
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableRobotsTXT = true
+summarylength = 0
+paginate = 10
+copyright = "© Shyam Jos, Built with Hugo ♡"
+enableInlineShortcodes = true
+enableEmoji = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[Permalinks]
+	posts = "/:filename"
+	pages = "/:filename"
+	notes = "/notes/:filename"

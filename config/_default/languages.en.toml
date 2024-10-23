@@ -1,0 +1,22 @@
+languageCode = "en"
+languageName = "English"
+languageDirection = "ltr"
+weight = 1
+
+[params]
+  dateFormat = "2 January 2006"
+
+
+[params.author]
+  name = "Shyam Jos"
+  image = "img/shyam_jos_photo.jpeg"
+  headline = "Welcome!👋 I'm Shyam Jos, documenting my adventures in Linux, Kubernetes, and DevOps."
+  bio = "Documenting my adventures in Linux, Kubernetes, and DevOps."
+  links = [
+    { linkedin = "https://linkedin.com/in/shyamjos" },
+    { github = "https://github.com/shyamjos" },
+    { youtube = "https://www.youtube.com/c/shyamjos" },  
+    { rss = "https://shyamjos.com/posts/index.xml" },
+    { email = "https://us11.list-manage.com/contact-form?u=965be0bf90a8bd031bf02e3d2&form_id=a133e5f84cf9f375c3001b62714fa3df" },
+    { x-twitter = "https://twitter.com/shyamjose" },
+  ]
