@@ -1,1 +1,613 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shyam Jos</title><link>https://shyamjos.com/</link><description>Recent content on Shyam Jos</description><generator>Hugo</generator><language>en</language><copyright>© Shyam Jos, Built with Hugo ♡</copyright><lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://shyamjos.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Fix - Error: Loading repository 'fedora' has failed</title><link>https://shyamjos.com/error-loading-repository-fedora/</link><pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate><guid>https://shyamjos.com/error-loading-repository-fedora/</guid><description/></item><item><title>A hand picked list of DevOps/SRE Newsletters</title><link>https://shyamjos.com/devops-sre-newsletters/</link><pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate><guid>https://shyamjos.com/devops-sre-newsletters/</guid><description/></item><item><title>About Shyam Jos</title><link>https://shyamjos.com/about/</link><pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate><guid>https://shyamjos.com/about/</guid><description/></item><item><title>HPA - How to gracefully scale down pods with PreStop hooks</title><link>https://shyamjos.com/kubernetes-prestop-hook/</link><pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate><guid>https://shyamjos.com/kubernetes-prestop-hook/</guid><description/></item><item><title>How to redirect PreStop hook output to pod logs</title><link>https://shyamjos.com/redirect-prestop-hook-logs/</link><pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate><guid>https://shyamjos.com/redirect-prestop-hook-logs/</guid><description/></item><item><title>Redirect CodeIgniter logs to container's STDOUT/ERR</title><link>https://shyamjos.com/redirecting-codeigniter-logs-to-container-stdout-stderr/</link><pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate><guid>https://shyamjos.com/redirecting-codeigniter-logs-to-container-stdout-stderr/</guid><description/></item><item><title>How to batch resize and compress images in linux</title><link>https://shyamjos.com/batch-resize-compress-photos-linux/</link><pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate><guid>https://shyamjos.com/batch-resize-compress-photos-linux/</guid><description/></item><item><title>Yay! Received my 2019 hacktoberfest swag</title><link>https://shyamjos.com/hacktoberfest-2019-swag/</link><pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate><guid>https://shyamjos.com/hacktoberfest-2019-swag/</guid><description/></item><item><title>Finally received my 2018 hacktoberfest swag</title><link>https://shyamjos.com/hacktoberfest-2018-swag/</link><pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate><guid>https://shyamjos.com/hacktoberfest-2018-swag/</guid><description/></item><item><title>Ripping DVDs in linux with FFmpeg</title><link>https://shyamjos.com/easily-rip-dvds-in-linux-with-ffmpeg/</link><pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate><guid>https://shyamjos.com/easily-rip-dvds-in-linux-with-ffmpeg/</guid><description/></item><item><title>How to create or restore efi partition in ubuntu</title><link>https://shyamjos.com/how-to-restore-or-create-efi-partition-in-ubuntu/</link><pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate><guid>https://shyamjos.com/how-to-restore-or-create-efi-partition-in-ubuntu/</guid><description/></item><item><title>How to reinstall grub2 efi bootloader on ubuntu</title><link>https://shyamjos.com/reinstall-grub2-efi-bootloader-ubuntu/</link><pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate><guid>https://shyamjos.com/reinstall-grub2-efi-bootloader-ubuntu/</guid><description/></item><item><title>A better email template for icinga2</title><link>https://shyamjos.com/icinga2-html-template/</link><pubDate>Sun, 14 May 2017 00:00:00 +0000</pubDate><guid>https://shyamjos.com/icinga2-html-template/</guid><description/></item><item><title>Monitoring Linux Server with an Arduino</title><link>https://shyamjos.com/monitoring-linux-server-with-arduino/</link><pubDate>Sat, 03 Sep 2016 00:00:00 +0000</pubDate><guid>https://shyamjos.com/monitoring-linux-server-with-arduino/</guid><description/></item><item><title>Insecure Airtel wifi routers with MGMNT ssid</title><link>https://shyamjos.com/hacking-airtel-wifi-router-for-fun-and-profit/</link><pubDate>Mon, 16 May 2016 00:00:00 +0000</pubDate><guid>https://shyamjos.com/hacking-airtel-wifi-router-for-fun-and-profit/</guid><description/></item><item><title>Update Raspberry pi firmware from Kali Linux</title><link>https://shyamjos.com/how-to-update-raspberrypi-firmware-in-kali-linux/</link><pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate><guid>https://shyamjos.com/how-to-update-raspberrypi-firmware-in-kali-linux/</guid><description/></item><item><title>Installing Jekyll on fedora</title><link>https://shyamjos.com/installing-jekyll-on-fedora/</link><pubDate>Fri, 16 Jan 2015 00:00:00 +0000</pubDate><guid>https://shyamjos.com/installing-jekyll-on-fedora/</guid><description/></item><item><title>Testing different DIY antennas for RTLSDR</title><link>https://shyamjos.com/testing-different-antennas-for-rtlsdr/</link><pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate><guid>https://shyamjos.com/testing-different-antennas-for-rtlsdr/</guid><description/></item><item><title>Decoding NASA's NOAA weather satellite signals with RTL-SDR</title><link>https://shyamjos.com/decoding-noaa-weather-satellite-apt-signals-with-rtl-sdr/</link><pubDate>Thu, 03 Oct 2013 00:00:00 +0000</pubDate><guid>https://shyamjos.com/decoding-noaa-weather-satellite-apt-signals-with-rtl-sdr/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shyam Jos</title><link>https://shyamjos.com/</link><description>Recent content on Shyam Jos</description><generator>Hugo</generator><language>en</language><copyright>© Shyam Jos, Built with Hugo ♡</copyright><lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://shyamjos.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Fix - Error: Loading repository 'fedora' has failed</title><link>https://shyamjos.com/error-loading-repository-fedora/</link><pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate><guid>https://shyamjos.com/error-loading-repository-fedora/</guid><description>&lt;p>Recently when I tried to update my Fedora laptop I got the below error message&lt;/p>
+&lt;pre tabindex="0">&lt;code>Error: Loading repository &amp;#39;fedora&amp;#39; has failed
+&lt;/code>&lt;/pre>&lt;p>After some debugging I found out that this is due to a corrupted repo cache, we can easily fix this error by clearing all repo caches by running the below command&lt;/p>
+&lt;pre tabindex="0">&lt;code>sudo dnf clean all
+&lt;/code>&lt;/pre>&lt;p>If that doesn&amp;rsquo;t work, you can run dnf command with debug options to see more details about the error.&lt;/p>
+&lt;pre tabindex="0">&lt;code>dnf update --debuglevel 3
+&lt;/code>&lt;/pre></description></item><item><title>A hand picked list of DevOps/SRE Newsletters</title><link>https://shyamjos.com/devops-sre-newsletters/</link><pubDate>Wed, 21 Sep 2022 00:00:00 +0000</pubDate><guid>https://shyamjos.com/devops-sre-newsletters/</guid><description>&lt;p>I often get messages from colleagues and friends how I keep myself updated with DevOps/SRE related news and articles, So today I am going to disclose my secret sources &amp;#x1f609; .&lt;/p>
+&lt;p>Here is a the list of my top newsletters related to DevOps and SRE&lt;/p>
+&lt;p>&lt;a href="https://www.devopsweekly.com/" target="_blank" rel="noreferrer">Devops Weekly&lt;/a> : A weekly slice of devops news brought to you by Gareth Rushgrove.&lt;/p>
+&lt;p>&lt;a href="https://sreweekly.com/" target="_blank" rel="noreferrer">SRE Weekly&lt;/a> : SRE Weekly is a newsletter devoted to everything related to keeping a site or service available as consistently as possible&lt;/p>
+&lt;p>&lt;a href="https://monitoring.love/" target="_blank" rel="noreferrer">Monitoring Weekly&lt;/a> : Best articles, news, and new tools related to monitoring&lt;/p>
+&lt;p>&lt;a href="https://learnk8s.io/newsletter" target="_blank" rel="noreferrer">LearnK8s&lt;/a> : Curated Kubernetes news, article and resources&lt;/p>
+&lt;p>&lt;a href="https://www.cncf.io/kubeweekly/" target="_blank" rel="noreferrer">KubeWeekly&lt;/a> : The weekly newsletter for all things Kubernetes and beyond.&lt;/p>
+&lt;p>&lt;a href="https://eks.news/" target="_blank" rel="noreferrer">eks.news&lt;/a> : This newsletter is curated by the Amazon Elastic Kubernetes Service (Amazon EKS) Developer Advocates.&lt;/p>
+&lt;p>&lt;a href="https://www.devopsbulletin.com/" target="_blank" rel="noreferrer">DevOps Bulletin&lt;/a> : A hand curated digest of must-read DevOps tutorials, books, podcasts, open-source projects and jobs.&lt;/p>
+&lt;h1 id="bonus-content-raised_hands" class="relative group">Bonus Content! &amp;#x1f64c; &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#bonus-content-raised_hands" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h1>&lt;p>&lt;a href="https://www.reddit.com/r/devops/" target="_blank" rel="noreferrer">r/devops&lt;/a> : Subreddit for everything DevOps&lt;/p>
+&lt;p>&lt;a href="https://www.reddit.com/r/sre/" target="_blank" rel="noreferrer">r/sre&lt;/a> Subreddit for everything site reliability engineering.&lt;/p>
+&lt;p>&lt;a href="https://www.reddit.com/r/ExperiencedDevOps/" target="_blank" rel="noreferrer">r/ExperiencedDevOps&lt;/a> : Subreddit for experienced DevOps engineers and those who want to learn from them!&lt;/p>
+&lt;p>&lt;a href="https://www.hndigest.com/" target="_blank" rel="noreferrer">HN digest&lt;/a> : Daily email with top Hacker News stories&lt;/p>
+&lt;p>&lt;a href="https://hackernewsletter.com/" target="_blank" rel="noreferrer">hackernewsletter&lt;/a> : Weekly email with top Hacker News stories&lt;/p>
+&lt;p>That&amp;rsquo;s it for now, I will try to keep this post updated with new newsletters as I find them.&lt;/p></description></item><item><title>About Shyam Jos</title><link>https://shyamjos.com/about/</link><pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate><guid>https://shyamjos.com/about/</guid><description>&lt;p>My name is Shyam Jos, I am a passionate SRE/DevOps Engineer from &lt;a href="https://en.wikipedia.org/wiki/Kochi" target="_blank" rel="noreferrer">Kochi, India&lt;/a>. I am a strong advocate of using Linux and Open-Source software.&lt;/p>
+&lt;p>I am always looking for ways to improve my life by constantly learning new things. I love coding, Mostly small python/bash scripts, quick and handy solutions to problems I had, check out my &lt;a href="https://github.com/shyamjos" target="_blank" rel="noreferrer">code on GitHub&lt;/a>. I also love tinkering with development boards like &lt;a href="https://github.com/shyamjos/Arduino_ServerMon" target="_blank" rel="noreferrer">arduino&lt;/a> and &lt;a href="http://shyamjos.com/How-to-update-raspberrypi-firmware-in-kali-linux/" target="_blank" rel="noreferrer">raspberry pi&lt;/a>.&lt;/p>
+&lt;p>I would love to hear from you! Feel free to send me an &lt;a href="https://us11.list-manage.com/contact-form?u=965be0bf90a8bd031bf02e3d2&amp;amp;form_id=a133e5f84cf9f375c3001b62714fa3df" target="_blank" rel="noreferrer">email&lt;/a> with any questions or comments&lt;/p>
+&lt;blockquote>
+&lt;p>Choose a job you love, and you will never have to work a day in your life. ~ Confucius&lt;/p>
+&lt;/blockquote></description></item><item><title>HPA - How to gracefully scale down pods with PreStop hooks</title><link>https://shyamjos.com/kubernetes-prestop-hook/</link><pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate><guid>https://shyamjos.com/kubernetes-prestop-hook/</guid><description>&lt;p>One of our application running in kubernetes have a background job feature (which is a bad practice and against stateless architecture) and recently we noticed some of these background jobs were killed in midway due to pod scale-down done by horizontal pod autoscaler. Our assumption was Kubernetes will only terminate pods with less utilization but we were wrong! and its a random selection.&lt;/p>
+&lt;p>In order to handle this issue we found out that we can use prestop hook feature in kubernetes to check for any background process running in container and wait for it to complete before sending termination signal.&lt;/p>
+&lt;h2 id="how-prestop-hooks-works-in-kubernetes" class="relative group">How PreStop hooks works in kubernetes &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-prestop-hooks-works-in-kubernetes" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Kubernetes provides container lifecycle hook framework to run code triggered by events during their management lifecycle called PostStart and PreStop hooks. A PreStop hook is called immediately before sending termination signal and kubernetes will wait until the PreStop hook to complete or until it exceed the &lt;code>terminationGracePeriodSeconds&lt;/code> value, Only after this kubernetes will sent the termination signal to the container.&lt;/p>
+&lt;h2 id="our-solution" class="relative group">Our solution &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#our-solution" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Our solution was to use a bash script for PreStop hook which will check for &lt;code>.lock&lt;/code> files created by the background process, if it finds a &lt;code>.lock&lt;/code> file the script will wait for the &lt;code>.lock&lt;/code> file to be removed and when the file is removed the script will exit then the container will receive termination signal. If the PreStop hook takes more time than &lt;code>terminationGracePeriodSeconds&lt;/code> value then container will be terminated immediately once this value is crossed.&lt;/p>
+&lt;h3 id="prestop-hook-bash-script" class="relative group">PreStop hook bash script &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#prestop-hook-bash-script" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h3>&lt;pre tabindex="0">&lt;code>#PreStop Script for checking background php tasks 
+SECONDS=0
+while true
+do	
+if [ -z &amp;#34;$(ls -A /app/demo-web/public/lock/*.lock 2&amp;gt; /dev/null)&amp;#34; ]; then
+ echo &amp;#34;No lock files found!, container is safe to terminate [Time Elapsed: ${SECONDS}s].&amp;#34;
+ exit 0
+else
+ echo &amp;#34;Lock files found!, waiting for background process to complete [Time Elapsed: ${SECONDS}s].&amp;#34;
+ sleep 10
+fi
+done &amp;gt; /proc/1/fd/1 # sent outputs to conatiner&amp;#39;s stdout
+&lt;/code>&lt;/pre>&lt;h3 id="final-deployment-yaml" class="relative group">Final deployment yaml &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#final-deployment-yaml" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h3>&lt;pre tabindex="0">&lt;code>apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: demo-web
+ namespace: production
+spec:
+ progressDeadlineSeconds: 300
+ revisionHistoryLimit: 5
+ strategy:
+ type: RollingUpdate
+ rollingUpdate:
+ maxSurge: 5
+ maxUnavailable: 0
+ selector:
+ matchLabels:
+ app: demo-web
+ tier: web
+ environment: production 
+ template:
+ metadata:
+ labels:
+ app: demo-web
+ tier: web
+ environment: production
+ spec:
+ terminationGracePeriodSeconds: 300
+ containers:
+ - name: demo-web
+ image: demo/demoweb:v1
+ lifecycle:
+ preStop :
+ exec:
+ command: [&amp;#34;bash&amp;#34;, &amp;#34;/app/scripts/prestop.sh&amp;#34;] 
+ imagePullPolicy: Always
+ resources:
+ requests:
+ cpu: 50m
+ memory: 150Mi
+ limits:
+ memory: &amp;#34;650Mi&amp;#34; 
+ ports:
+ - containerPort: 80
+ readinessProbe:
+ httpGet:
+ path: /healthz
+ port: 80
+ initialDelaySeconds: 2
+ periodSeconds: 5
+ successThreshold: 1
+ failureThreshold: 2
+ timeoutSeconds: 2
+ env:
+ - name: HOST 
+ value: &amp;#34;demo.app.com&amp;#34;
+&lt;/code>&lt;/pre></description></item><item><title>How to redirect PreStop hook output to pod logs</title><link>https://shyamjos.com/redirect-prestop-hook-logs/</link><pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate><guid>https://shyamjos.com/redirect-prestop-hook-logs/</guid><description>&lt;p>You might have noticed that command output of PreStop hook won&amp;rsquo;t appear in pod logs and only thing you can see is whether the PreStop hook command failed or not is by checking kubernetes events log.&lt;/p>
+&lt;p>So how can we see the PreStop hook command output in pod logs?&lt;/p>
+&lt;p>By default container engine only redirects the stdout/err of the main process (running with &lt;code>PID 1&lt;/code>) to the logging driver. Since the PreStop hook runs as a separate process the output from this command won&amp;rsquo;t appear in container logs.&lt;/p>
+&lt;h2 id="how-to-redirect-prestop-hook-command-output-to-container-logs-" class="relative group">How to redirect PreStop hook command output to container logs ? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-to-redirect-prestop-hook-command-output-to-container-logs-" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>In Linux you can easily redirect stdout/err of one process to another by writing to the other process&amp;rsquo;s stdout/err file descriptor (/proc/PID/fd/1 or /proc/PID/fd/2). In our case we can redirect the stdout of PreStop hook command to our main process&amp;rsquo;s stdout using the command &lt;code>echo &amp;quot;Hello from the other side&amp;quot; &amp;gt; /proc/1/fd/1&lt;/code> and this message will be appear in the container logs.&lt;/p>
+&lt;h2 id="example-prestop-hook-command-with-output-redirection" class="relative group">Example PreStop hook command with output redirection &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#example-prestop-hook-command-with-output-redirection" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code> lifecycle:
+ preStop :
+ exec:
+ command: [&amp;#34;bash&amp;#34;, &amp;#34;uptime &amp;gt; /proc/1/fd/1&amp;#34;] 
+&lt;/code>&lt;/pre></description></item><item><title>Redirect CodeIgniter logs to container's STDOUT/ERR</title><link>https://shyamjos.com/redirecting-codeigniter-logs-to-container-stdout-stderr/</link><pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate><guid>https://shyamjos.com/redirecting-codeigniter-logs-to-container-stdout-stderr/</guid><description>&lt;p>As part of migrating applications from EC2 instance to kubernetes I was assigned with a task of containerizing a CodeIgniter application. once the application was containerized I noticed that the application logs were writing to a local file inside the container. so I thought this can be easily fixed by changing the logging path in CodeIgniter config file to &lt;code>php://stdout&lt;/code>.&lt;/p>
+&lt;p>But it was not that easy!!&lt;/p>
+&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/logs/giphy.webp" alt="logging" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>strangely the log path config in CodeIgniter is a combination of file path + file extension, so if I set the file path as &lt;code>php://stdout&lt;/code> and left the file extension part blank, the application will throw an error &lt;code>'Use a full server path with trailing slash'&lt;/code>.&lt;/p>
+&lt;p>After some digging on google. I found out that there is no easy way to set custom static log path in CodeIgniter and I also found an &lt;a href="https://github.com/bcit-ci/CodeIgniter/issues/5648" target="_blank" rel="noreferrer">open feature request&lt;/a> for this issue which is not yet implemented by CodeIgniter team :(&lt;/p>
+&lt;p>Luckily I was able to fix the issue by modifying CodeIgniter logging module which is located at &lt;code>system/core/Log.php&lt;/code>, I am not sure if this is an optimal solution , just in-case if you are stuck with similar issue give it a try!&lt;/p>
+&lt;p>Firstly I removed the file path and file extension check conditions from below code block (&lt;code>system/core/Log.php&lt;/code>)&lt;/p>
+&lt;pre tabindex="0">&lt;code>public function __construct()
+	{
+		$config =&amp;amp; get_config();
+
+		$this-&amp;gt;_log_path = ($config[&amp;#39;log_path&amp;#39;] !== &amp;#39;&amp;#39;) ? $config[&amp;#39;log_path&amp;#39;] : APPPATH.&amp;#39;logs/&amp;#39;;
+		$this-&amp;gt;_file_ext = (isset($config[&amp;#39;log_file_extension&amp;#39;]) &amp;amp;&amp;amp; $config[&amp;#39;log_file_extension&amp;#39;] !== &amp;#39;&amp;#39;)
+			? ltrim($config[&amp;#39;log_file_extension&amp;#39;], &amp;#39;.&amp;#39;) : &amp;#39;php&amp;#39;;
+
+		file_exists($this-&amp;gt;_log_path) OR mkdir($this-&amp;gt;_log_path, 0755, TRUE);
+
+		if ( ! is_dir($this-&amp;gt;_log_path) OR ! is_really_writable($this-&amp;gt;_log_path))
+		{
+			$this-&amp;gt;_enabled = FALSE;
+		}
+
+		if (is_numeric($config[&amp;#39;log_threshold&amp;#39;]))
+		{
+			$this-&amp;gt;_threshold = (int) $config[&amp;#39;log_threshold&amp;#39;];
+		}
+		elseif (is_array($config[&amp;#39;log_threshold&amp;#39;]))
+		{
+			$this-&amp;gt;_threshold = 0;
+			$this-&amp;gt;_threshold_array = array_flip($config[&amp;#39;log_threshold&amp;#39;]);
+		}
+
+		if ( ! empty($config[&amp;#39;log_date_format&amp;#39;]))
+		{
+			$this-&amp;gt;_date_fmt = $config[&amp;#39;log_date_format&amp;#39;];
+		}
+
+		if ( ! empty($config[&amp;#39;log_file_permissions&amp;#39;]) &amp;amp;&amp;amp; is_int($config[&amp;#39;log_file_permissions&amp;#39;]))
+		{
+			$this-&amp;gt;_file_permissions = $config[&amp;#39;log_file_permissions&amp;#39;];
+		}
+	}
+&lt;/code>&lt;/pre>&lt;p>This is how the code block looks after removing all the checks&lt;/p>
+&lt;pre tabindex="0">&lt;code>	public function __construct()
+	{
+		$config =&amp;amp; get_config();
+
+			$this-&amp;gt;_enabled = TRUE;
+	}
+&lt;/code>&lt;/pre>&lt;p>Now you need to replace below line&lt;/p>
+&lt;pre tabindex="0">&lt;code>$filepath = $this-&amp;gt;_log_path.&amp;#39;log-&amp;#39;.date(&amp;#39;Y-m-d&amp;#39;).&amp;#39;.&amp;#39;.$this-&amp;gt;_file_ext;
+&lt;/code>&lt;/pre>&lt;p>with this line (use a static file path instead of a dynamic one)&lt;/p>
+&lt;pre tabindex="0">&lt;code>$filepath = $this-&amp;gt;_log_path;
+&lt;/code>&lt;/pre>&lt;p>Now find and remove the below block code from the file (used for changing permission of log file, not needed in our case)&lt;/p>
+&lt;pre tabindex="0">&lt;code>		if (isset($newfile) &amp;amp;&amp;amp; $newfile === TRUE)
+		{
+			chmod($filepath, $this-&amp;gt;_file_permissions);
+		}
+&lt;/code>&lt;/pre>&lt;p>And finally make changes to the CodeIgniter main config file (&lt;code>application/config/config.php&lt;/code>) as below&lt;/p>
+&lt;pre tabindex="0">&lt;code>/*
+|--------------------------------------------------------------------------
+| Error Logging Threshold
+|--------------------------------------------------------------------------
+|
+| You can enable error logging by setting a threshold over zero. The
+| threshold determines what gets logged. Threshold options are:
+|
+|	0 = Disables logging, Error logging TURNED OFF
+|	1 = Error Messages (including PHP errors)
+|	2 = Debug Messages
+|	3 = Informational Messages
+|	4 = All Messages
+|
+| You can also pass an array with threshold levels to show individual error types
+|
+| 	array(2) = Debug Messages, without Error Messages
+|
+| For a live site you&amp;#39;ll usually only enable Errors (1) to be logged otherwise
+| your log files will fill up very fast.
+|
+*/
+$config[&amp;#39;log_threshold&amp;#39;] = 4;
+
+/*
+|--------------------------------------------------------------------------
+| Error Logging Directory Path
+|--------------------------------------------------------------------------
+|
+| Leave this BLANK unless you would like to set something other than the default
+| application/logs/ directory. Use a full server path with trailing slash.
+|
+*/
+$config[&amp;#39;log_path&amp;#39;] = &amp;#39;php://stdout&amp;#39;;
+
+/*
+|--------------------------------------------------------------------------
+| Log File Extension
+|--------------------------------------------------------------------------
+|
+| The default filename extension for log files. The default &amp;#39;php&amp;#39; allows for
+| protecting the log files via basic scripting, when they are to be stored
+| under a publicly accessible directory.
+|
+| Note: Leaving it blank will default to &amp;#39;php&amp;#39;.
+|
+*/
+$config[&amp;#39;log_file_extension&amp;#39;] = &amp;#39;&amp;#39;;
+
+/*
+|--------------------------------------------------------------------------
+| Log File Permissions
+|--------------------------------------------------------------------------
+|
+| The file system permissions to be applied on newly created log files.
+|
+| IMPORTANT: This MUST be an integer (no quotes) and you MUST use octal
+| integer notation (i.e. 0700, 0644, etc.)
+*/
+$config[&amp;#39;log_file_permissions&amp;#39;] = &amp;#39;&amp;#39;;
+
+/*
+|--------------------------------------------------------------------------
+| Date Format for Logs
+|--------------------------------------------------------------------------
+|
+| Each item that is logged has an associated date. You can use PHP date
+| codes to set your own date formatting
+|
+*/
+$config[&amp;#39;log_date_format&amp;#39;] = &amp;#39;&amp;#39;;
+
+/*
+|--------------------------------------------------------------------------
+| Error Views Directory Path
+|--------------------------------------------------------------------------
+|
+| Leave this BLANK unless you would like to set something other than the default
+| application/views/errors/ directory. Use a full server path with trailing slash.
+|
+*/
+$config[&amp;#39;error_views_path&amp;#39;] = &amp;#39;&amp;#39;;
+&lt;/code>&lt;/pre>&lt;p>Once these changes are deployed you will be able to the see the application logs in container&amp;rsquo;s STDOUT and STDERR logs (docker/kubernetes logs).&lt;/p></description></item><item><title>How to batch resize and compress images in linux</title><link>https://shyamjos.com/batch-resize-compress-photos-linux/</link><pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate><guid>https://shyamjos.com/batch-resize-compress-photos-linux/</guid><description>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/ImageMagick/retro-camera-black.jpg" alt="retro cmaer" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+
+In this tutorial I will show you how to batch resize and compress images in Ubuntu or in any other Linux distros(debian,arch and fedora).&lt;/p>
+&lt;p>&amp;lsquo;Convert&amp;rsquo; command is a very powerful image manipulation utility which comes preinstalled in almost all Linux distributions (ubuntu,debian,arch and fedora) and it is a part of ImageMagick software suite.&lt;/p>
+&lt;h2 id="check-if-convert-command-is-available-on-your-linux-distro" class="relative group">Check if convert command is available on your Linux distro &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#check-if-convert-command-is-available-on-your-linux-distro" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code> convert -version
+&lt;/code>&lt;/pre>&lt;p>output:&lt;/p>
+&lt;p>Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 &lt;a href="http://www.imagemagick.org" target="_blank" rel="noreferrer">http://www.imagemagick.org&lt;/a>
+Copyright: © 1999-2017 ImageMagick Studio LLC&lt;/p>
+&lt;p>If the above command is not found on your Linux distro you can install it by typing the below command.&lt;/p>
+&lt;h2 id="install-convert-tool-on-ubuntu--debian" class="relative group">Install convert tool on Ubuntu / Debian &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-convert-tool-on-ubuntu--debian" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code> sudo apt-get install imagemagick
+&lt;/code>&lt;/pre>&lt;h2 id="install-convert-tool-on-fedora" class="relative group">Install convert tool on fedora &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-convert-tool-on-fedora" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code> sudo dnf install imagemagick
+&lt;/code>&lt;/pre>&lt;h2 id="install-convert-tool-on-arch" class="relative group">Install convert tool on arch &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-convert-tool-on-arch" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code> sudo pacman -S imagemagick
+&lt;/code>&lt;/pre>&lt;p>Note: &lt;em>It&amp;rsquo;s always good idea take backup of your images before running convert command.&lt;/em>&lt;/p>
+&lt;h2 id="batch-resize-and-compress-images-with-convert-command" class="relative group">Batch resize and compress images with convert command &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#batch-resize-and-compress-images-with-convert-command" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Below command will resize and compress all images ending with .jpg extension in a &amp;lsquo;for loop&amp;rsquo; and save the compressed/resized image as &amp;lsquo;filename-Optimized.jpg&amp;rsquo;.&lt;/p>
+&lt;p>&lt;strong>&amp;ndash;quality :&lt;/strong> this option is used to set the image compression level in percentage&lt;/p>
+&lt;p>&lt;strong>-resize :&lt;/strong> this option is used to resize the image to a given resolution , You can use -resize option with width ( -resize 1600x ) only or both width and height ( -resize 1600×900), In both cases convert command will automatically adjust the given resolution to get optimum aspect ratio so you don&amp;rsquo;t have to worry about stretched images.&lt;/p>
+&lt;p>Note: some jpeg image extensions may end with .JPG (in capital letters) ,Since Linux is case-sensitive you may need to adjust the bash script accordingly.&lt;/p>
+&lt;p>Open terminal and cd into the directory containing your photos and execute below command&lt;/p>
+&lt;pre tabindex="0">&lt;code> mkdir photos-Optimized;for photos in *.JPG;do convert -verbose &amp;#34;$photos&amp;#34; -quality 85% -resize 1600x900 ./photos-Optimized/&amp;#34;$photos-Optimized.jpg&amp;#34;; done
+&lt;/code>&lt;/pre>&lt;p>Voilà! Now you have successfully resized/compressed images, You can see the optimized images in the photos-Optimized directory.&lt;/p></description></item><item><title>Yay! Received my 2019 hacktoberfest swag</title><link>https://shyamjos.com/hacktoberfest-2019-swag/</link><pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate><guid>https://shyamjos.com/hacktoberfest-2019-swag/</guid><description>&lt;p>Yay! finally received my 2019 hacktoberfest swag
+
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/swag/hacktoberfest-2019-swag.jpg" alt="hacktoberfest 2019" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p></description></item><item><title>Finally received my 2018 hacktoberfest swag</title><link>https://shyamjos.com/hacktoberfest-2018-swag/</link><pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate><guid>https://shyamjos.com/hacktoberfest-2018-swag/</guid><description>&lt;p>Yay! finally received my 2018 hacktoberfest swag
+
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/swag/hacktoberfest-2018-swag.jpg" alt="rtlsdr antennas" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p></description></item><item><title>Ripping DVDs in linux with FFmpeg</title><link>https://shyamjos.com/easily-rip-dvds-in-linux-with-ffmpeg/</link><pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate><guid>https://shyamjos.com/easily-rip-dvds-in-linux-with-ffmpeg/</guid><description>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/dvd-ripping/dvd-linux.webp" alt="dvd ripping in linux" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+
+In this tutorial, I will show you a simple way to RIP DVD into a single file using FFmpeg command line tool in Linux.&lt;/p>
+&lt;h2 id="install-ffmpeg-in-ubuntudebianlinux-mint" class="relative group">Install FFmpeg in Ubuntu/Debian/Linux Mint &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-ffmpeg-in-ubuntudebianlinux-mint" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code>sudo apt-get install ffmpeg
+&lt;/code>&lt;/pre>&lt;p>Now copy contents of your DVD to local directory and cd into &lt;strong>VIDEO_TS&lt;/strong> directory&lt;/p>
+&lt;p>&lt;strong>Note:&lt;/strong> If you want to RIP the DVD directly without copying it to the local directory first , then you need to modify last part of the below commands to : /home/your-username/myvideo/rip.mp4&lt;/p>
+&lt;h2 id="1-rip-dvd-into-a-single-file" class="relative group">1. RIP DVD into a single file &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-rip-dvd-into-a-single-file" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Now enter below command to start ripping process in optimum quality, If you want to control the size (eg: limit size to 700MB) of the ripped file, then use the third command&lt;/p>
+&lt;pre tabindex="0">&lt;code>cat VTS_0*_*VOB | ffmpeg -i - -vcodec h264 -acodec mp2 rip.mp4
+&lt;/code>&lt;/pre>&lt;h2 id="2-rip-dvd-with-deinterlace-option" class="relative group">2. RIP DVD with deinterlace option &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-rip-dvd-with-deinterlace-option" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>If you want to enable deinterlace option run below command&lt;/p>
+&lt;pre tabindex="0">&lt;code>cat VTS_0*_*VOB | ffmpeg -i - -vf yadif -vcodec h264 -acodec mp2 rip.mp4
+&lt;/code>&lt;/pre>&lt;h2 id="3-rip-dvd-with-quality-option" class="relative group">3. RIP DVD with quality option &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-rip-dvd-with-quality-option" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Use below command to reduce size and quality of output file, Here the &amp;lsquo;-crf&amp;rsquo; option sets the quality of the ripped file. The range of the CRF scale is 0&amp;ndash;51, where 0 is lossless , 23 is the default, and 51 is the worst quality possible.&lt;/p>
+&lt;pre tabindex="0">&lt;code>cat VTS_0*_*VOB | ffmpeg -i - -c:v libx264 -crf 23 rip.mp4
+&lt;/code>&lt;/pre>&lt;p>Above command will read all video files in a folder and pipe the stream to FFmpeg command, after the successful completion of the command you can find the ripped file with name &lt;code>rip.mp4&lt;/code>&lt;/p></description></item><item><title>How to create or restore efi partition in ubuntu</title><link>https://shyamjos.com/how-to-restore-or-create-efi-partition-in-ubuntu/</link><pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate><guid>https://shyamjos.com/how-to-restore-or-create-efi-partition-in-ubuntu/</guid><description>&lt;h2 id="what-type-of-file-system-is-used-in-efi-partition-" class="relative group">What Type of file system is used in EFI partition ? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#what-type-of-file-system-is-used-in-efi-partition-" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>EFI partition in Ubuntu is basically a FAT partition with label &amp;ldquo;EFI&amp;rdquo;&lt;/p>
+&lt;h2 id="how-to-create--restore-an-efi-partition-" class="relative group">How to create / restore an efi partition ? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-to-create--restore-an-efi-partition-" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Just reformat or create a normal FAT file system partition with a size of 512MB (can be any size) and label it as &amp;ldquo;EFI&amp;rdquo;, You can use fdisk command if you are comfortable with cli or you can use gparted tool from a live media of Ubuntu to create new efi partition.&lt;/p>
+&lt;h2 id="how-can-i-reinstall-grub-efi-bootloader-after-creating-or-restoring-efi-partition-" class="relative group">How can I reinstall Grub efi bootloader after creating or restoring efi partition ? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-can-i-reinstall-grub-efi-bootloader-after-creating-or-restoring-efi-partition-" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>After restoring or formatting efi partition your system will not boot since bootloader needs to be reinstalled on the new efi partition, follow this &lt;a href="https://shyamjos.com/reinstall-grub2-efi-bootloader-ubuntu/" target="_blank" rel="noreferrer">tutorial to reinstall grub efi bootloader in your Ubuntu&lt;/a> system.&lt;/p></description></item><item><title>How to reinstall grub2 efi bootloader on ubuntu</title><link>https://shyamjos.com/reinstall-grub2-efi-bootloader-ubuntu/</link><pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate><guid>https://shyamjos.com/reinstall-grub2-efi-bootloader-ubuntu/</guid><description>&lt;p>In this tutorial I will show you how to reinstall grub2 bootloader on a ubuntu system with efi partition.&lt;/p>
+&lt;h2 id="boot-from-a-live-usbcd" class="relative group">Boot from a live usb/cd &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#boot-from-a-live-usbcd" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Boot from the ubuntu live usb/cd and select the option &amp;ldquo;try ubuntu without installing&amp;rdquo;&lt;/p>
+&lt;h2 id="check-if-efi-is-enabled-in-bios" class="relative group">Check if EFI is enabled in bios &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#check-if-efi-is-enabled-in-bios" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Enter below command in terminal\&lt;/p>
+&lt;pre tabindex="0">&lt;code>[ -d /sys/firmware/efi ] &amp;amp;&amp;amp; echo &amp;#34;EFI boot on HDD&amp;#34; || echo &amp;#34;Legacy boot on HDD&amp;#34;
+&lt;/code>&lt;/pre>&lt;p>If you see &amp;ldquo;EFI boot on HDD&amp;rdquo; Message then you are already running on efi mode or if you see &amp;ldquo;Legacy boot on HDD&amp;rdquo; message then your system is not running on efi mode, you must change the boot options to efi before proceeding to next step.&lt;/p>
+&lt;p>Note: First you have to find the partition name where ubuntu is installed, You can use &amp;ldquo;sudo fdisk -l&amp;rdquo; to list all hard disks and partitions in your computer. In my case /dev/sda is the name of my harddisk, /dev/sda2 is the partition where ubuntu is installed (root partition) and /dev/sda1 was the efi partition.&lt;/p>
+&lt;h2 id="mount-and-chroot-into-local-filesystem" class="relative group">Mount and chroot into local filesystem &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#mount-and-chroot-into-local-filesystem" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Note: You have to replace the sda with device name of your HDD, In most cases it is sda, assuming that you have only one hard disk installed.&lt;/p>
+&lt;p>Note: If you get any errors while trying to mount your efi partition (&lt;code>/dev/sda1&lt;/code>), You may need to reformat your efi partition, In case if it got corrupted or if you accidentally formatted it. &lt;a href="https://linuxsuperuser.com/how-to-restore-or-create-efi-partition-in-ubuntu/" target="_blank" rel="noreferrer">Follow this tutorial to restore or reformat your efi partition&lt;/a>.&lt;/p>
+&lt;p>Open terminal and enter below command\&lt;/p>
+&lt;pre tabindex="0">&lt;code>sudo mount /dev/sda2 /mnt\
+sudo mount /dev/sda1 /mnt/boot/efi\
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done\
+sudo chroot /mnt\
+grub-install /dev/sda\
+update-grub\
+&lt;/code>&lt;/pre>&lt;p>Important : &lt;em>&lt;strong>use blkid command to check UUID of your efi partition, check if it matches the value in your /etc/fstab entry , otherwise ubuntu will not boot , You may need to update the UUID especially if you have formatted EFI partition . (Eg: sudo blkid /dev/sda1)&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>That&amp;rsquo;s it! Now reboot to test the bootloader&lt;/p></description></item><item><title>A better email template for icinga2</title><link>https://shyamjos.com/icinga2-html-template/</link><pubDate>Sun, 14 May 2017 00:00:00 +0000</pubDate><guid>https://shyamjos.com/icinga2-html-template/</guid><description>&lt;p>I have created a very simple HTML email alert Template for Icinga 2 to replace the default boring text-based email alert. This template can be easily installed by replacing existing alert scripts inside /etc/icinga2/scripts.&lt;/p>
+&lt;p>&lt;strong>Update:&lt;/strong> I have replaced mail command with mutt due to an incompatibility of options among different Linux distributions. Also, I have added new color highlight feature for different states (ok=green,warning=orange and critical=red).&lt;/p>
+&lt;h2 id="screenshots" class="relative group">Screenshots &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#screenshots" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/icinga2/html-template-for-icinga.png" alt="Icinga2 email alert screenshot" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+
+
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/icinga2/icinga-2-html-email-template.png" alt="Icinga2 email alert screenshot" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+
+
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/icinga2/icinga-html-email.png" alt="Icinga2 email alert screenshot" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="prerequisite" class="relative group">Prerequisite &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#prerequisite" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Make Sure mutt package is installed on your server&lt;/p>
+&lt;h2 id="how-to-install" class="relative group">How to install &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-to-install" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;ul>
+&lt;li>Backup existing script files (mail-service-notification.sh and mail-host-notification.sh) inside /etc/icinga2/scripts&lt;/li>
+&lt;li>Download the scripts from this github repo and edit the “Variables for HTML Template” section in both scripts&lt;/li>
+&lt;li>Now replace the existing scripts with the new ones and Send a custom notification to test new HTML email template.&lt;/li>
+&lt;/ul>
+&lt;p>If you have any issues, please &lt;a href="https://github.com/shyamjos/HTML-email-template-for-Icinga-2/issues" target="_blank" rel="noreferrer">report it here&lt;/a>&lt;/p></description></item><item><title>Monitoring Linux Server with an Arduino</title><link>https://shyamjos.com/monitoring-linux-server-with-arduino/</link><pubDate>Sat, 03 Sep 2016 00:00:00 +0000</pubDate><guid>https://shyamjos.com/monitoring-linux-server-with-arduino/</guid><description>&lt;p>As usual I was so bored and wanted to build something cool on this weekend, So I ended up building an Arduino based Linux server monitoring solution for monitoring my Linux VPS.&lt;/p>
+&lt;p>The idea was Simple, use an Arduino Ethernet module to make a get request to the php script hosted on the server and parse the response data (free -m,df -h,uptime) and display it on the LCD screen every one minute.&lt;/p>
+&lt;p>And here is the demo of Arduino Linux monitor in action&lt;/p>
+&lt;h2 id="demo" class="relative group">Demo &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#demo" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/arduino-monitor/arduino-lcd.gif" alt="Arduino lcd" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>If you are interested in this project you can download the Arduino sketch from my &lt;a href="https://github.com/shyamjos/Arduino_ServerMon" target="_blank" rel="noreferrer">github page&lt;/a>.&lt;/p>
+&lt;h2 id="todo-list" class="relative group">Todo List &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#todo-list" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;ul>
+&lt;li>Buzzer Notification upon increase in memory/cpu load..etc&lt;/li>
+&lt;li>Use json instead of php page&lt;/li>
+&lt;/ul></description></item><item><title>Insecure Airtel wifi routers with MGMNT ssid</title><link>https://shyamjos.com/hacking-airtel-wifi-router-for-fun-and-profit/</link><pubDate>Mon, 16 May 2016 00:00:00 +0000</pubDate><guid>https://shyamjos.com/hacking-airtel-wifi-router-for-fun-and-profit/</guid><description>&lt;p>Some of the wifi routers (especially beetel models) provided by airtel broadband is paired with two SSIDs(Access point), One is an actual SSID for internet access and another one called MGMNT, which is used by airtel for maintenance / automatic configuration.
+The default key for MGMNT is &lt;code>0987654321&lt;/code>, which is hard-coded into the router&amp;rsquo;s firmware and the stupidest part is there is no option to disable it.&lt;/p>
+&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/airtel/hardcoded-password-meme.jpg" alt="password meme" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>Now lets start hacking!, Connect to MGMNT SSID with the key &lt;code>0987654321&lt;/code>.
+Then Navigate to &lt;code>192.168.1.1&lt;/code> in your browser and login with the default credentials username: admin and password: password
+If you are lucky now you can see a network status page (view only)&lt;/p>
+&lt;p>In recent models airtel patched a vulnerability that allows an attacker to view/change the password of the main SSID by connecting to MGMNT and browsing to the URL : &lt;code>http://192.168.1.1/basic/home_wlan.htm&lt;/code>.Since the router i am testing was running on a patched firmware, it didn&amp;rsquo;t worked.&lt;/p>
+&lt;p>So the next option was Telnet, I was able to telnet into the router with the credentials admin/password.&lt;/p>
+&lt;pre tabindex="0">&lt;code>Telnet 192.168.1.1
+&lt;/code>&lt;/pre>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/airtel/wifi-router-hacking.png" alt="hacking router" class="mx-auto my-0 rounded-md" />&lt;figcaption class="text-center">Airtel router telnet&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>Bingo! after playing with telnet for sometime I found the password for main SSID by typing the command:&lt;/p>
+&lt;pre tabindex="0">&lt;code>show wlan config
+&lt;/code>&lt;/pre>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/airtel/airtel-wifi-password.png" alt="router password" class="mx-auto my-0 rounded-md" />&lt;figcaption class="text-center">hacking airtel wifi password&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>I was also able to hack another airtel router in a coffee shop with my andriod phone using &lt;a href="https://play.google.com/store/apps/details?id=jackpal.androidterm&amp;amp;hl=en" target="_blank" rel="noreferrer">terminal emulator app&lt;/a>.&lt;/p>
+&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/airtel/airtel-wifi-android-hacking.png" alt="router hacking" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>airtel patched vulnerability in web interface but forgot to patch telnet service which is accessible through the MGMNT ssid , An attacker can use the default user account which has full privilege to view and modify router configuration via telnet.&lt;/p>
+&lt;h2 id="how-to-disable-mgmnt-ssid-" class="relative group">How to disable MGMNT ssid ? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-to-disable-mgmnt-ssid-" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Currently there is a workaround for this problem, by modifying the router configuration backup file and restoring it back.Please see this &lt;a href="http://superuser.com/questions/449289/how-to-prevent-wifi-router-from-broadcasting-multiple-ssids/925810#925810" target="_blank" rel="noreferrer">stackoverflow answer&lt;/a>.Also change your router&amp;rsquo;s default password as soon as possible.&lt;/p></description></item><item><title>Update Raspberry pi firmware from Kali Linux</title><link>https://shyamjos.com/how-to-update-raspberrypi-firmware-in-kali-linux/</link><pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate><guid>https://shyamjos.com/how-to-update-raspberrypi-firmware-in-kali-linux/</guid><description>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/rpi/rpi-firmware.webp" alt="flashing rpi" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>We can easily update Raspberry pi firmware in raspbian by running the command rpi-update, But in kali linux we dont have rpi-update command by default.
+&lt;br>&lt;br>
+To install the rpi-update in kali, run the following command:&lt;/p>
+&lt;pre tabindex="0">&lt;code>sudo curl -L --output /usr/bin/rpi-update https://raw.githubusercontent.com/Hexxeh/rpi-update/master/rpi-update &amp;amp;&amp;amp; sudo chmod +x /usr/bin/rpi-update
+&lt;/code>&lt;/pre>&lt;p>Then, to update your rpi firmware, run the following command:&lt;/p>
+&lt;pre tabindex="0">&lt;code>sudo rpi-update
+&lt;/code>&lt;/pre>&lt;p>Now restart your rpi to new firmware to take effect.
+&lt;br>
+For more Expert options visit the &lt;a href="https://github.com/Hexxeh/rpi-update" target="_blank" rel="noreferrer">rpi-update project page&lt;/a>&lt;/p></description></item><item><title>Installing Jekyll on fedora</title><link>https://shyamjos.com/installing-jekyll-on-fedora/</link><pubDate>Fri, 16 Jan 2015 00:00:00 +0000</pubDate><guid>https://shyamjos.com/installing-jekyll-on-fedora/</guid><description>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/misc/jekyll-logo-linux.png" alt="jekyll logo linux" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+
+Follow below steps to install jekyll on fedora&lt;/p>
+&lt;h2 id="install-jekyll" class="relative group">Install jekyll &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-jekyll" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code>sudo dnf install ruby-devel redhat-rpm-config jekyll
+&lt;/code>&lt;/pre>&lt;h2 id="optional-packages" class="relative group">Optional packages &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#optional-packages" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code>sudo dnf group install &amp;#34;C Development Tools and Libraries&amp;#34;
+sudo dnf install rubygems-devel nodejs bundler
+&lt;/code>&lt;/pre></description></item><item><title>Testing different DIY antennas for RTLSDR</title><link>https://shyamjos.com/testing-different-antennas-for-rtlsdr/</link><pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate><guid>https://shyamjos.com/testing-different-antennas-for-rtlsdr/</guid><description>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/rtlsdr/rtlsdr-antenna.webp" alt="rtlsdr antennas" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+
+I have been experimenting with different DIY antennas for RTLSDR since 2013,Below is my review on different antennas I have tested so far.&lt;/p>
+&lt;h2 id="for-decoding-noaa-weather-satellite-signals" class="relative group">For decoding NOAA weather satellite Signals &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#for-decoding-noaa-weather-satellite-signals" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Quadrifilar Helix (QFH) Antenna is the most recommended antenna for APT signal reception, But I was too lazy to build one. So i decided to make a ground plane antenna with coat hanger. In my opinion GP antenna is the simplest and easy to make antenna for decoding APT signals.&lt;a href="http://shyamjos.com/decoding-noaa-weather-satellite-apt-signals-with-RTL-SDR" target="_blank" rel="noreferrer">Check out my NOAA images&lt;/a> decoded with coat hanger GP antenna.&lt;/p>
+&lt;h2 id="for-decoding-adb-signals-tracking-aircraft" class="relative group">For decoding adb signals (tracking aircraft) &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#for-decoding-adb-signals-tracking-aircraft" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Coaxial Collinear Antenna is the best antenna for long range adb signal reception,&lt;a href="https://www.balarad.net/" target="_blank" rel="noreferrer">On this page&lt;/a> there is a good tutorial for making Coaxial Collinear Antenna.&lt;/p>
+&lt;h2 id="for-decoding-ais-signals-tracking-ships" class="relative group">For decoding AIS signals (tracking ships) &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#for-decoding-ais-signals-tracking-ships" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Coaxial Collinear Antenna provides pretty good reception for AIS signals,&lt;a href="http://arundale.com/docs/ais/aerial.html" target="_blank" rel="noreferrer">On this page&lt;/a> there is excellent instructions on constructing high gain coax collinear AIS antenna.&lt;/p>
+&lt;h2 id="for-nfmfmwfmam-reception" class="relative group">For NFM/FM/WFM/AM Reception &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#for-nfmfmwfmam-reception" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>For me a &lt;a href="http://shyamjos.com/decoding-noaa-weather-satellite-apt-signals-with-RTL-SDR/" target="_blank" rel="noreferrer">Ground plane antenna&lt;/a> worked pretty well for FM/FM/WFM/AM reception.You can use &lt;a href="http://www.csgnetwork.com/antennagpcalc.html" target="_blank" rel="noreferrer">GP antenna calculator&lt;/a> to fine tune your GP antenna to a specific frequency for better reception.&lt;/p></description></item><item><title>Decoding NASA's NOAA weather satellite signals with RTL-SDR</title><link>https://shyamjos.com/decoding-noaa-weather-satellite-apt-signals-with-rtl-sdr/</link><pubDate>Thu, 03 Oct 2013 00:00:00 +0000</pubDate><guid>https://shyamjos.com/decoding-noaa-weather-satellite-apt-signals-with-rtl-sdr/</guid><description>&lt;p>NOAA satellite is a series of weather satellites launched by NASA. It carries a suite of instruments that provides data for weather and climate predictions, everyday multiple NOAA weather satellites pass above us. Each NOAA weather satellite broadcasts an Automatic Picture Transmission (APT) signal (137MHZ), which contains a live weather image of our area. RTL-SDR dongle combined with a good antenna and programs like GQRX, sdrsharp and WXtoImg we can decode this signals.
+
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/noaa/rtlsdr-dongle.jpg" alt="rtlsdr dvb dongle image" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+
+If you are not familiar with RTL-SDR, RTL-SDR is a very cheap software defined radio that uses a DVB-T TV tuner dongle based on the realtek RTL2832U chipset. Basically , this means that a cheap $20 TV tuner USB dongle with the RTL2832U chipset can be used as a computer controlled radio scanner.&lt;/p>
+&lt;p>After a long trial and error process with different antennas finally I am surprised with APT signal reception from my simple ground plane antenna which is made from coat hanger.I don&amp;rsquo;t no more technical stuff about antennas, My GP antenna have 22 inch long radials ( slant down at an angle of 45 degrees) &lt;a href="http://i.imgur.com/rq3t1W1.jpg" target="_blank" rel="noreferrer">close up photo of antenna&lt;/a>.&lt;/p>
+&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/noaa/ground-plane-antenna-rtlsdr.jpg" alt="rtlsdr ground plane antenna" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>The 4 radials are connected to metal base plate and the center radial is wrapped in an insulation tape (no contact with metal plate or other 4 radials ) I used a 75 ohm coax cable for the feed line and it is less than 5 meter long, center copper wire of coax is connected to the center radial and silver wires to the metal base plate.&lt;/p>
+&lt;h2 id="software-setup" class="relative group">Software setup &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#software-setup" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Software used is sdrsharp (RF gain 100% ,40~42khz bandwidth,90% AF gain,Sample Rate: 1,024 MSPS,audio sample rate: 48000) and the audio is piped to WXtoImg via Virtual Audio Cable (48000 sample rate output).&lt;/p>
+&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/noaa/rtlsdr-dongle-noaa.jpg" alt="sdr#" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="decoded-images" class="relative group">Decoded Images &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#decoded-images" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;h3 id="noaa-18" class="relative group">NOAA 18 &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#noaa-18" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h3>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/noaa/noaa-18-image.jpg" alt="NOAA 18 india image" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;h3 id="noaa-19" class="relative group">NOAA 19 &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#noaa-19" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h3>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/noaa/noaa-19-rlsdr-image.jpg" alt="NOAA 19 india image" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;h3 id="noaa-15" class="relative group">NOAA 15 &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#noaa-15" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h3>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/noaa/noaa-15-image-rtlsdr.jpg" alt="NOAA 15 india image" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;h3 id="noaa-15---sea-surface-temperature" class="relative group">NOAA 15 - Sea surface temperature &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#noaa-15---sea-surface-temperature" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h3>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/noaa/noaa-sea-level-rtlsdr.jpg" alt="NOAA 15 india Sea surface temperature image" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>discussion on &lt;a href="https://www.reddit.com/r/RTLSDR/comments/1no5sh/received_noaa_images_using_my_coat_hanger_ground/" target="_blank" rel="noreferrer">reddit &lt;/a>.&lt;/p></description></item></channel></rss>

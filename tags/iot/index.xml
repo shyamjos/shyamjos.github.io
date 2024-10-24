@@ -1,1 +1,80 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Iot on Shyam Jos</title><link>https://shyamjos.com/tags/iot/</link><description>Recent content in Iot on Shyam Jos</description><generator>Hugo</generator><language>en</language><copyright>© Shyam Jos, Built with Hugo ♡</copyright><lastBuildDate>Sat, 03 Sep 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://shyamjos.com/tags/iot/index.xml" rel="self" type="application/rss+xml"/><item><title>Monitoring Linux Server with an Arduino</title><link>https://shyamjos.com/monitoring-linux-server-with-arduino/</link><pubDate>Sat, 03 Sep 2016 00:00:00 +0000</pubDate><guid>https://shyamjos.com/monitoring-linux-server-with-arduino/</guid><description/></item><item><title>Insecure Airtel wifi routers with MGMNT ssid</title><link>https://shyamjos.com/hacking-airtel-wifi-router-for-fun-and-profit/</link><pubDate>Mon, 16 May 2016 00:00:00 +0000</pubDate><guid>https://shyamjos.com/hacking-airtel-wifi-router-for-fun-and-profit/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Iot on Shyam Jos</title><link>https://shyamjos.com/tags/iot/</link><description>Recent content in Iot on Shyam Jos</description><generator>Hugo</generator><language>en</language><copyright>© Shyam Jos, Built with Hugo ♡</copyright><lastBuildDate>Sat, 03 Sep 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://shyamjos.com/tags/iot/index.xml" rel="self" type="application/rss+xml"/><item><title>Monitoring Linux Server with an Arduino</title><link>https://shyamjos.com/monitoring-linux-server-with-arduino/</link><pubDate>Sat, 03 Sep 2016 00:00:00 +0000</pubDate><guid>https://shyamjos.com/monitoring-linux-server-with-arduino/</guid><description>&lt;p>As usual I was so bored and wanted to build something cool on this weekend, So I ended up building an Arduino based Linux server monitoring solution for monitoring my Linux VPS.&lt;/p>
+&lt;p>The idea was Simple, use an Arduino Ethernet module to make a get request to the php script hosted on the server and parse the response data (free -m,df -h,uptime) and display it on the LCD screen every one minute.&lt;/p>
+&lt;p>And here is the demo of Arduino Linux monitor in action&lt;/p>
+&lt;h2 id="demo" class="relative group">Demo &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#demo" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/arduino-monitor/arduino-lcd.gif" alt="Arduino lcd" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>If you are interested in this project you can download the Arduino sketch from my &lt;a href="https://github.com/shyamjos/Arduino_ServerMon" target="_blank" rel="noreferrer">github page&lt;/a>.&lt;/p>
+&lt;h2 id="todo-list" class="relative group">Todo List &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#todo-list" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;ul>
+&lt;li>Buzzer Notification upon increase in memory/cpu load..etc&lt;/li>
+&lt;li>Use json instead of php page&lt;/li>
+&lt;/ul></description></item><item><title>Insecure Airtel wifi routers with MGMNT ssid</title><link>https://shyamjos.com/hacking-airtel-wifi-router-for-fun-and-profit/</link><pubDate>Mon, 16 May 2016 00:00:00 +0000</pubDate><guid>https://shyamjos.com/hacking-airtel-wifi-router-for-fun-and-profit/</guid><description>&lt;p>Some of the wifi routers (especially beetel models) provided by airtel broadband is paired with two SSIDs(Access point), One is an actual SSID for internet access and another one called MGMNT, which is used by airtel for maintenance / automatic configuration.
+The default key for MGMNT is &lt;code>0987654321&lt;/code>, which is hard-coded into the router&amp;rsquo;s firmware and the stupidest part is there is no option to disable it.&lt;/p>
+&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/airtel/hardcoded-password-meme.jpg" alt="password meme" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>Now lets start hacking!, Connect to MGMNT SSID with the key &lt;code>0987654321&lt;/code>.
+Then Navigate to &lt;code>192.168.1.1&lt;/code> in your browser and login with the default credentials username: admin and password: password
+If you are lucky now you can see a network status page (view only)&lt;/p>
+&lt;p>In recent models airtel patched a vulnerability that allows an attacker to view/change the password of the main SSID by connecting to MGMNT and browsing to the URL : &lt;code>http://192.168.1.1/basic/home_wlan.htm&lt;/code>.Since the router i am testing was running on a patched firmware, it didn&amp;rsquo;t worked.&lt;/p>
+&lt;p>So the next option was Telnet, I was able to telnet into the router with the credentials admin/password.&lt;/p>
+&lt;pre tabindex="0">&lt;code>Telnet 192.168.1.1
+&lt;/code>&lt;/pre>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/airtel/wifi-router-hacking.png" alt="hacking router" class="mx-auto my-0 rounded-md" />&lt;figcaption class="text-center">Airtel router telnet&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>Bingo! after playing with telnet for sometime I found the password for main SSID by typing the command:&lt;/p>
+&lt;pre tabindex="0">&lt;code>show wlan config
+&lt;/code>&lt;/pre>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/airtel/airtel-wifi-password.png" alt="router password" class="mx-auto my-0 rounded-md" />&lt;figcaption class="text-center">hacking airtel wifi password&lt;/figcaption>
+&lt;/figure>
+&lt;/p>
+&lt;p>I was also able to hack another airtel router in a coffee shop with my andriod phone using &lt;a href="https://play.google.com/store/apps/details?id=jackpal.androidterm&amp;amp;hl=en" target="_blank" rel="noreferrer">terminal emulator app&lt;/a>.&lt;/p>
+&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/airtel/airtel-wifi-android-hacking.png" alt="router hacking" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>airtel patched vulnerability in web interface but forgot to patch telnet service which is accessible through the MGMNT ssid , An attacker can use the default user account which has full privilege to view and modify router configuration via telnet.&lt;/p>
+&lt;h2 id="how-to-disable-mgmnt-ssid-" class="relative group">How to disable MGMNT ssid ? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-to-disable-mgmnt-ssid-" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Currently there is a workaround for this problem, by modifying the router configuration backup file and restoring it back.Please see this &lt;a href="http://superuser.com/questions/449289/how-to-prevent-wifi-router-from-broadcasting-multiple-ssids/925810#925810" target="_blank" rel="noreferrer">stackoverflow answer&lt;/a>.Also change your router&amp;rsquo;s default password as soon as possible.&lt;/p></description></item></channel></rss>

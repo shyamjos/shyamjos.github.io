@@ -1,1 +1,106 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rtlsdr on Shyam Jos</title><link>https://shyamjos.com/tags/rtlsdr/</link><description>Recent content in Rtlsdr on Shyam Jos</description><generator>Hugo</generator><language>en</language><copyright>© Shyam Jos, Built with Hugo ♡</copyright><lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://shyamjos.com/tags/rtlsdr/index.xml" rel="self" type="application/rss+xml"/><item><title>Testing different DIY antennas for RTLSDR</title><link>https://shyamjos.com/testing-different-antennas-for-rtlsdr/</link><pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate><guid>https://shyamjos.com/testing-different-antennas-for-rtlsdr/</guid><description/></item><item><title>Decoding NASA's NOAA weather satellite signals with RTL-SDR</title><link>https://shyamjos.com/decoding-noaa-weather-satellite-apt-signals-with-rtl-sdr/</link><pubDate>Thu, 03 Oct 2013 00:00:00 +0000</pubDate><guid>https://shyamjos.com/decoding-noaa-weather-satellite-apt-signals-with-rtl-sdr/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rtlsdr on Shyam Jos</title><link>https://shyamjos.com/tags/rtlsdr/</link><description>Recent content in Rtlsdr on Shyam Jos</description><generator>Hugo</generator><language>en</language><copyright>© Shyam Jos, Built with Hugo ♡</copyright><lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://shyamjos.com/tags/rtlsdr/index.xml" rel="self" type="application/rss+xml"/><item><title>Testing different DIY antennas for RTLSDR</title><link>https://shyamjos.com/testing-different-antennas-for-rtlsdr/</link><pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate><guid>https://shyamjos.com/testing-different-antennas-for-rtlsdr/</guid><description>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/rtlsdr/rtlsdr-antenna.webp" alt="rtlsdr antennas" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+
+I have been experimenting with different DIY antennas for RTLSDR since 2013,Below is my review on different antennas I have tested so far.&lt;/p>
+&lt;h2 id="for-decoding-noaa-weather-satellite-signals" class="relative group">For decoding NOAA weather satellite Signals &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#for-decoding-noaa-weather-satellite-signals" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Quadrifilar Helix (QFH) Antenna is the most recommended antenna for APT signal reception, But I was too lazy to build one. So i decided to make a ground plane antenna with coat hanger. In my opinion GP antenna is the simplest and easy to make antenna for decoding APT signals.&lt;a href="http://shyamjos.com/decoding-noaa-weather-satellite-apt-signals-with-RTL-SDR" target="_blank" rel="noreferrer">Check out my NOAA images&lt;/a> decoded with coat hanger GP antenna.&lt;/p>
+&lt;h2 id="for-decoding-adb-signals-tracking-aircraft" class="relative group">For decoding adb signals (tracking aircraft) &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#for-decoding-adb-signals-tracking-aircraft" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Coaxial Collinear Antenna is the best antenna for long range adb signal reception,&lt;a href="https://www.balarad.net/" target="_blank" rel="noreferrer">On this page&lt;/a> there is a good tutorial for making Coaxial Collinear Antenna.&lt;/p>
+&lt;h2 id="for-decoding-ais-signals-tracking-ships" class="relative group">For decoding AIS signals (tracking ships) &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#for-decoding-ais-signals-tracking-ships" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Coaxial Collinear Antenna provides pretty good reception for AIS signals,&lt;a href="http://arundale.com/docs/ais/aerial.html" target="_blank" rel="noreferrer">On this page&lt;/a> there is excellent instructions on constructing high gain coax collinear AIS antenna.&lt;/p>
+&lt;h2 id="for-nfmfmwfmam-reception" class="relative group">For NFM/FM/WFM/AM Reception &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#for-nfmfmwfmam-reception" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>For me a &lt;a href="http://shyamjos.com/decoding-noaa-weather-satellite-apt-signals-with-RTL-SDR/" target="_blank" rel="noreferrer">Ground plane antenna&lt;/a> worked pretty well for FM/FM/WFM/AM reception.You can use &lt;a href="http://www.csgnetwork.com/antennagpcalc.html" target="_blank" rel="noreferrer">GP antenna calculator&lt;/a> to fine tune your GP antenna to a specific frequency for better reception.&lt;/p></description></item><item><title>Decoding NASA's NOAA weather satellite signals with RTL-SDR</title><link>https://shyamjos.com/decoding-noaa-weather-satellite-apt-signals-with-rtl-sdr/</link><pubDate>Thu, 03 Oct 2013 00:00:00 +0000</pubDate><guid>https://shyamjos.com/decoding-noaa-weather-satellite-apt-signals-with-rtl-sdr/</guid><description>&lt;p>NOAA satellite is a series of weather satellites launched by NASA. It carries a suite of instruments that provides data for weather and climate predictions, everyday multiple NOAA weather satellites pass above us. Each NOAA weather satellite broadcasts an Automatic Picture Transmission (APT) signal (137MHZ), which contains a live weather image of our area. RTL-SDR dongle combined with a good antenna and programs like GQRX, sdrsharp and WXtoImg we can decode this signals.
+
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/noaa/rtlsdr-dongle.jpg" alt="rtlsdr dvb dongle image" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+
+If you are not familiar with RTL-SDR, RTL-SDR is a very cheap software defined radio that uses a DVB-T TV tuner dongle based on the realtek RTL2832U chipset. Basically , this means that a cheap $20 TV tuner USB dongle with the RTL2832U chipset can be used as a computer controlled radio scanner.&lt;/p>
+&lt;p>After a long trial and error process with different antennas finally I am surprised with APT signal reception from my simple ground plane antenna which is made from coat hanger.I don&amp;rsquo;t no more technical stuff about antennas, My GP antenna have 22 inch long radials ( slant down at an angle of 45 degrees) &lt;a href="http://i.imgur.com/rq3t1W1.jpg" target="_blank" rel="noreferrer">close up photo of antenna&lt;/a>.&lt;/p>
+&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/noaa/ground-plane-antenna-rtlsdr.jpg" alt="rtlsdr ground plane antenna" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>The 4 radials are connected to metal base plate and the center radial is wrapped in an insulation tape (no contact with metal plate or other 4 radials ) I used a 75 ohm coax cable for the feed line and it is less than 5 meter long, center copper wire of coax is connected to the center radial and silver wires to the metal base plate.&lt;/p>
+&lt;h2 id="software-setup" class="relative group">Software setup &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#software-setup" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Software used is sdrsharp (RF gain 100% ,40~42khz bandwidth,90% AF gain,Sample Rate: 1,024 MSPS,audio sample rate: 48000) and the audio is piped to WXtoImg via Virtual Audio Cable (48000 sample rate output).&lt;/p>
+&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/noaa/rtlsdr-dongle-noaa.jpg" alt="sdr#" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="decoded-images" class="relative group">Decoded Images &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#decoded-images" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;h3 id="noaa-18" class="relative group">NOAA 18 &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#noaa-18" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h3>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/noaa/noaa-18-image.jpg" alt="NOAA 18 india image" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;h3 id="noaa-19" class="relative group">NOAA 19 &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#noaa-19" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h3>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/noaa/noaa-19-rlsdr-image.jpg" alt="NOAA 19 india image" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;h3 id="noaa-15" class="relative group">NOAA 15 &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#noaa-15" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h3>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/noaa/noaa-15-image-rtlsdr.jpg" alt="NOAA 15 india image" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;h3 id="noaa-15---sea-surface-temperature" class="relative group">NOAA 15 - Sea surface temperature &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#noaa-15---sea-surface-temperature" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h3>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/noaa/noaa-sea-level-rtlsdr.jpg" alt="NOAA 15 india Sea surface temperature image" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>discussion on &lt;a href="https://www.reddit.com/r/RTLSDR/comments/1no5sh/received_noaa_images_using_my_coat_hanger_ground/" target="_blank" rel="noreferrer">reddit &lt;/a>.&lt;/p></description></item></channel></rss>

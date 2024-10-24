@@ -1,1 +1,161 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Logging on Shyam Jos</title><link>https://shyamjos.com/tags/logging/</link><description>Recent content in Logging on Shyam Jos</description><generator>Hugo</generator><language>en</language><copyright>© Shyam Jos, Built with Hugo ♡</copyright><lastBuildDate>Sat, 25 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://shyamjos.com/tags/logging/index.xml" rel="self" type="application/rss+xml"/><item><title>How to redirect PreStop hook output to pod logs</title><link>https://shyamjos.com/redirect-prestop-hook-logs/</link><pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate><guid>https://shyamjos.com/redirect-prestop-hook-logs/</guid><description/></item><item><title>Redirect CodeIgniter logs to container's STDOUT/ERR</title><link>https://shyamjos.com/redirecting-codeigniter-logs-to-container-stdout-stderr/</link><pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate><guid>https://shyamjos.com/redirecting-codeigniter-logs-to-container-stdout-stderr/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Logging on Shyam Jos</title><link>https://shyamjos.com/tags/logging/</link><description>Recent content in Logging on Shyam Jos</description><generator>Hugo</generator><language>en</language><copyright>© Shyam Jos, Built with Hugo ♡</copyright><lastBuildDate>Sat, 25 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://shyamjos.com/tags/logging/index.xml" rel="self" type="application/rss+xml"/><item><title>How to redirect PreStop hook output to pod logs</title><link>https://shyamjos.com/redirect-prestop-hook-logs/</link><pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate><guid>https://shyamjos.com/redirect-prestop-hook-logs/</guid><description>&lt;p>You might have noticed that command output of PreStop hook won&amp;rsquo;t appear in pod logs and only thing you can see is whether the PreStop hook command failed or not is by checking kubernetes events log.&lt;/p>
+&lt;p>So how can we see the PreStop hook command output in pod logs?&lt;/p>
+&lt;p>By default container engine only redirects the stdout/err of the main process (running with &lt;code>PID 1&lt;/code>) to the logging driver. Since the PreStop hook runs as a separate process the output from this command won&amp;rsquo;t appear in container logs.&lt;/p>
+&lt;h2 id="how-to-redirect-prestop-hook-command-output-to-container-logs-" class="relative group">How to redirect PreStop hook command output to container logs ? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-to-redirect-prestop-hook-command-output-to-container-logs-" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>In Linux you can easily redirect stdout/err of one process to another by writing to the other process&amp;rsquo;s stdout/err file descriptor (/proc/PID/fd/1 or /proc/PID/fd/2). In our case we can redirect the stdout of PreStop hook command to our main process&amp;rsquo;s stdout using the command &lt;code>echo &amp;quot;Hello from the other side&amp;quot; &amp;gt; /proc/1/fd/1&lt;/code> and this message will be appear in the container logs.&lt;/p>
+&lt;h2 id="example-prestop-hook-command-with-output-redirection" class="relative group">Example PreStop hook command with output redirection &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#example-prestop-hook-command-with-output-redirection" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code> lifecycle:
+ preStop :
+ exec:
+ command: [&amp;#34;bash&amp;#34;, &amp;#34;uptime &amp;gt; /proc/1/fd/1&amp;#34;] 
+&lt;/code>&lt;/pre></description></item><item><title>Redirect CodeIgniter logs to container's STDOUT/ERR</title><link>https://shyamjos.com/redirecting-codeigniter-logs-to-container-stdout-stderr/</link><pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate><guid>https://shyamjos.com/redirecting-codeigniter-logs-to-container-stdout-stderr/</guid><description>&lt;p>As part of migrating applications from EC2 instance to kubernetes I was assigned with a task of containerizing a CodeIgniter application. once the application was containerized I noticed that the application logs were writing to a local file inside the container. so I thought this can be easily fixed by changing the logging path in CodeIgniter config file to &lt;code>php://stdout&lt;/code>.&lt;/p>
+&lt;p>But it was not that easy!!&lt;/p>
+&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/logs/giphy.webp" alt="logging" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>strangely the log path config in CodeIgniter is a combination of file path + file extension, so if I set the file path as &lt;code>php://stdout&lt;/code> and left the file extension part blank, the application will throw an error &lt;code>'Use a full server path with trailing slash'&lt;/code>.&lt;/p>
+&lt;p>After some digging on google. I found out that there is no easy way to set custom static log path in CodeIgniter and I also found an &lt;a href="https://github.com/bcit-ci/CodeIgniter/issues/5648" target="_blank" rel="noreferrer">open feature request&lt;/a> for this issue which is not yet implemented by CodeIgniter team :(&lt;/p>
+&lt;p>Luckily I was able to fix the issue by modifying CodeIgniter logging module which is located at &lt;code>system/core/Log.php&lt;/code>, I am not sure if this is an optimal solution , just in-case if you are stuck with similar issue give it a try!&lt;/p>
+&lt;p>Firstly I removed the file path and file extension check conditions from below code block (&lt;code>system/core/Log.php&lt;/code>)&lt;/p>
+&lt;pre tabindex="0">&lt;code>public function __construct()
+	{
+		$config =&amp;amp; get_config();
+
+		$this-&amp;gt;_log_path = ($config[&amp;#39;log_path&amp;#39;] !== &amp;#39;&amp;#39;) ? $config[&amp;#39;log_path&amp;#39;] : APPPATH.&amp;#39;logs/&amp;#39;;
+		$this-&amp;gt;_file_ext = (isset($config[&amp;#39;log_file_extension&amp;#39;]) &amp;amp;&amp;amp; $config[&amp;#39;log_file_extension&amp;#39;] !== &amp;#39;&amp;#39;)
+			? ltrim($config[&amp;#39;log_file_extension&amp;#39;], &amp;#39;.&amp;#39;) : &amp;#39;php&amp;#39;;
+
+		file_exists($this-&amp;gt;_log_path) OR mkdir($this-&amp;gt;_log_path, 0755, TRUE);
+
+		if ( ! is_dir($this-&amp;gt;_log_path) OR ! is_really_writable($this-&amp;gt;_log_path))
+		{
+			$this-&amp;gt;_enabled = FALSE;
+		}
+
+		if (is_numeric($config[&amp;#39;log_threshold&amp;#39;]))
+		{
+			$this-&amp;gt;_threshold = (int) $config[&amp;#39;log_threshold&amp;#39;];
+		}
+		elseif (is_array($config[&amp;#39;log_threshold&amp;#39;]))
+		{
+			$this-&amp;gt;_threshold = 0;
+			$this-&amp;gt;_threshold_array = array_flip($config[&amp;#39;log_threshold&amp;#39;]);
+		}
+
+		if ( ! empty($config[&amp;#39;log_date_format&amp;#39;]))
+		{
+			$this-&amp;gt;_date_fmt = $config[&amp;#39;log_date_format&amp;#39;];
+		}
+
+		if ( ! empty($config[&amp;#39;log_file_permissions&amp;#39;]) &amp;amp;&amp;amp; is_int($config[&amp;#39;log_file_permissions&amp;#39;]))
+		{
+			$this-&amp;gt;_file_permissions = $config[&amp;#39;log_file_permissions&amp;#39;];
+		}
+	}
+&lt;/code>&lt;/pre>&lt;p>This is how the code block looks after removing all the checks&lt;/p>
+&lt;pre tabindex="0">&lt;code>	public function __construct()
+	{
+		$config =&amp;amp; get_config();
+
+			$this-&amp;gt;_enabled = TRUE;
+	}
+&lt;/code>&lt;/pre>&lt;p>Now you need to replace below line&lt;/p>
+&lt;pre tabindex="0">&lt;code>$filepath = $this-&amp;gt;_log_path.&amp;#39;log-&amp;#39;.date(&amp;#39;Y-m-d&amp;#39;).&amp;#39;.&amp;#39;.$this-&amp;gt;_file_ext;
+&lt;/code>&lt;/pre>&lt;p>with this line (use a static file path instead of a dynamic one)&lt;/p>
+&lt;pre tabindex="0">&lt;code>$filepath = $this-&amp;gt;_log_path;
+&lt;/code>&lt;/pre>&lt;p>Now find and remove the below block code from the file (used for changing permission of log file, not needed in our case)&lt;/p>
+&lt;pre tabindex="0">&lt;code>		if (isset($newfile) &amp;amp;&amp;amp; $newfile === TRUE)
+		{
+			chmod($filepath, $this-&amp;gt;_file_permissions);
+		}
+&lt;/code>&lt;/pre>&lt;p>And finally make changes to the CodeIgniter main config file (&lt;code>application/config/config.php&lt;/code>) as below&lt;/p>
+&lt;pre tabindex="0">&lt;code>/*
+|--------------------------------------------------------------------------
+| Error Logging Threshold
+|--------------------------------------------------------------------------
+|
+| You can enable error logging by setting a threshold over zero. The
+| threshold determines what gets logged. Threshold options are:
+|
+|	0 = Disables logging, Error logging TURNED OFF
+|	1 = Error Messages (including PHP errors)
+|	2 = Debug Messages
+|	3 = Informational Messages
+|	4 = All Messages
+|
+| You can also pass an array with threshold levels to show individual error types
+|
+| 	array(2) = Debug Messages, without Error Messages
+|
+| For a live site you&amp;#39;ll usually only enable Errors (1) to be logged otherwise
+| your log files will fill up very fast.
+|
+*/
+$config[&amp;#39;log_threshold&amp;#39;] = 4;
+
+/*
+|--------------------------------------------------------------------------
+| Error Logging Directory Path
+|--------------------------------------------------------------------------
+|
+| Leave this BLANK unless you would like to set something other than the default
+| application/logs/ directory. Use a full server path with trailing slash.
+|
+*/
+$config[&amp;#39;log_path&amp;#39;] = &amp;#39;php://stdout&amp;#39;;
+
+/*
+|--------------------------------------------------------------------------
+| Log File Extension
+|--------------------------------------------------------------------------
+|
+| The default filename extension for log files. The default &amp;#39;php&amp;#39; allows for
+| protecting the log files via basic scripting, when they are to be stored
+| under a publicly accessible directory.
+|
+| Note: Leaving it blank will default to &amp;#39;php&amp;#39;.
+|
+*/
+$config[&amp;#39;log_file_extension&amp;#39;] = &amp;#39;&amp;#39;;
+
+/*
+|--------------------------------------------------------------------------
+| Log File Permissions
+|--------------------------------------------------------------------------
+|
+| The file system permissions to be applied on newly created log files.
+|
+| IMPORTANT: This MUST be an integer (no quotes) and you MUST use octal
+| integer notation (i.e. 0700, 0644, etc.)
+*/
+$config[&amp;#39;log_file_permissions&amp;#39;] = &amp;#39;&amp;#39;;
+
+/*
+|--------------------------------------------------------------------------
+| Date Format for Logs
+|--------------------------------------------------------------------------
+|
+| Each item that is logged has an associated date. You can use PHP date
+| codes to set your own date formatting
+|
+*/
+$config[&amp;#39;log_date_format&amp;#39;] = &amp;#39;&amp;#39;;
+
+/*
+|--------------------------------------------------------------------------
+| Error Views Directory Path
+|--------------------------------------------------------------------------
+|
+| Leave this BLANK unless you would like to set something other than the default
+| application/views/errors/ directory. Use a full server path with trailing slash.
+|
+*/
+$config[&amp;#39;error_views_path&amp;#39;] = &amp;#39;&amp;#39;;
+&lt;/code>&lt;/pre>&lt;p>Once these changes are deployed you will be able to the see the application logs in container&amp;rsquo;s STDOUT and STDERR logs (docker/kubernetes logs).&lt;/p></description></item></channel></rss>

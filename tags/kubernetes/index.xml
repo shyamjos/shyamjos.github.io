@@ -1,1 +1,79 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubernetes on Shyam Jos</title><link>https://shyamjos.com/tags/kubernetes/</link><description>Recent content in Kubernetes on Shyam Jos</description><generator>Hugo</generator><language>en</language><copyright>© Shyam Jos, Built with Hugo ♡</copyright><lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://shyamjos.com/tags/kubernetes/index.xml" rel="self" type="application/rss+xml"/><item><title>HPA - How to gracefully scale down pods with PreStop hooks</title><link>https://shyamjos.com/kubernetes-prestop-hook/</link><pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate><guid>https://shyamjos.com/kubernetes-prestop-hook/</guid><description/></item><item><title>How to redirect PreStop hook output to pod logs</title><link>https://shyamjos.com/redirect-prestop-hook-logs/</link><pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate><guid>https://shyamjos.com/redirect-prestop-hook-logs/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubernetes on Shyam Jos</title><link>https://shyamjos.com/tags/kubernetes/</link><description>Recent content in Kubernetes on Shyam Jos</description><generator>Hugo</generator><language>en</language><copyright>© Shyam Jos, Built with Hugo ♡</copyright><lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://shyamjos.com/tags/kubernetes/index.xml" rel="self" type="application/rss+xml"/><item><title>HPA - How to gracefully scale down pods with PreStop hooks</title><link>https://shyamjos.com/kubernetes-prestop-hook/</link><pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate><guid>https://shyamjos.com/kubernetes-prestop-hook/</guid><description>&lt;p>One of our application running in kubernetes have a background job feature (which is a bad practice and against stateless architecture) and recently we noticed some of these background jobs were killed in midway due to pod scale-down done by horizontal pod autoscaler. Our assumption was Kubernetes will only terminate pods with less utilization but we were wrong! and its a random selection.&lt;/p>
+&lt;p>In order to handle this issue we found out that we can use prestop hook feature in kubernetes to check for any background process running in container and wait for it to complete before sending termination signal.&lt;/p>
+&lt;h2 id="how-prestop-hooks-works-in-kubernetes" class="relative group">How PreStop hooks works in kubernetes &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-prestop-hooks-works-in-kubernetes" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Kubernetes provides container lifecycle hook framework to run code triggered by events during their management lifecycle called PostStart and PreStop hooks. A PreStop hook is called immediately before sending termination signal and kubernetes will wait until the PreStop hook to complete or until it exceed the &lt;code>terminationGracePeriodSeconds&lt;/code> value, Only after this kubernetes will sent the termination signal to the container.&lt;/p>
+&lt;h2 id="our-solution" class="relative group">Our solution &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#our-solution" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Our solution was to use a bash script for PreStop hook which will check for &lt;code>.lock&lt;/code> files created by the background process, if it finds a &lt;code>.lock&lt;/code> file the script will wait for the &lt;code>.lock&lt;/code> file to be removed and when the file is removed the script will exit then the container will receive termination signal. If the PreStop hook takes more time than &lt;code>terminationGracePeriodSeconds&lt;/code> value then container will be terminated immediately once this value is crossed.&lt;/p>
+&lt;h3 id="prestop-hook-bash-script" class="relative group">PreStop hook bash script &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#prestop-hook-bash-script" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h3>&lt;pre tabindex="0">&lt;code>#PreStop Script for checking background php tasks 
+SECONDS=0
+while true
+do	
+if [ -z &amp;#34;$(ls -A /app/demo-web/public/lock/*.lock 2&amp;gt; /dev/null)&amp;#34; ]; then
+ echo &amp;#34;No lock files found!, container is safe to terminate [Time Elapsed: ${SECONDS}s].&amp;#34;
+ exit 0
+else
+ echo &amp;#34;Lock files found!, waiting for background process to complete [Time Elapsed: ${SECONDS}s].&amp;#34;
+ sleep 10
+fi
+done &amp;gt; /proc/1/fd/1 # sent outputs to conatiner&amp;#39;s stdout
+&lt;/code>&lt;/pre>&lt;h3 id="final-deployment-yaml" class="relative group">Final deployment yaml &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#final-deployment-yaml" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h3>&lt;pre tabindex="0">&lt;code>apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: demo-web
+ namespace: production
+spec:
+ progressDeadlineSeconds: 300
+ revisionHistoryLimit: 5
+ strategy:
+ type: RollingUpdate
+ rollingUpdate:
+ maxSurge: 5
+ maxUnavailable: 0
+ selector:
+ matchLabels:
+ app: demo-web
+ tier: web
+ environment: production 
+ template:
+ metadata:
+ labels:
+ app: demo-web
+ tier: web
+ environment: production
+ spec:
+ terminationGracePeriodSeconds: 300
+ containers:
+ - name: demo-web
+ image: demo/demoweb:v1
+ lifecycle:
+ preStop :
+ exec:
+ command: [&amp;#34;bash&amp;#34;, &amp;#34;/app/scripts/prestop.sh&amp;#34;] 
+ imagePullPolicy: Always
+ resources:
+ requests:
+ cpu: 50m
+ memory: 150Mi
+ limits:
+ memory: &amp;#34;650Mi&amp;#34; 
+ ports:
+ - containerPort: 80
+ readinessProbe:
+ httpGet:
+ path: /healthz
+ port: 80
+ initialDelaySeconds: 2
+ periodSeconds: 5
+ successThreshold: 1
+ failureThreshold: 2
+ timeoutSeconds: 2
+ env:
+ - name: HOST 
+ value: &amp;#34;demo.app.com&amp;#34;
+&lt;/code>&lt;/pre></description></item><item><title>How to redirect PreStop hook output to pod logs</title><link>https://shyamjos.com/redirect-prestop-hook-logs/</link><pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate><guid>https://shyamjos.com/redirect-prestop-hook-logs/</guid><description>&lt;p>You might have noticed that command output of PreStop hook won&amp;rsquo;t appear in pod logs and only thing you can see is whether the PreStop hook command failed or not is by checking kubernetes events log.&lt;/p>
+&lt;p>So how can we see the PreStop hook command output in pod logs?&lt;/p>
+&lt;p>By default container engine only redirects the stdout/err of the main process (running with &lt;code>PID 1&lt;/code>) to the logging driver. Since the PreStop hook runs as a separate process the output from this command won&amp;rsquo;t appear in container logs.&lt;/p>
+&lt;h2 id="how-to-redirect-prestop-hook-command-output-to-container-logs-" class="relative group">How to redirect PreStop hook command output to container logs ? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-to-redirect-prestop-hook-command-output-to-container-logs-" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>In Linux you can easily redirect stdout/err of one process to another by writing to the other process&amp;rsquo;s stdout/err file descriptor (/proc/PID/fd/1 or /proc/PID/fd/2). In our case we can redirect the stdout of PreStop hook command to our main process&amp;rsquo;s stdout using the command &lt;code>echo &amp;quot;Hello from the other side&amp;quot; &amp;gt; /proc/1/fd/1&lt;/code> and this message will be appear in the container logs.&lt;/p>
+&lt;h2 id="example-prestop-hook-command-with-output-redirection" class="relative group">Example PreStop hook command with output redirection &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#example-prestop-hook-command-with-output-redirection" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code> lifecycle:
+ preStop :
+ exec:
+ command: [&amp;#34;bash&amp;#34;, &amp;#34;uptime &amp;gt; /proc/1/fd/1&amp;#34;] 
+&lt;/code>&lt;/pre></description></item></channel></rss>

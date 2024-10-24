@@ -1,1 +1,125 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Shyam Jos</title><link>https://shyamjos.com/tags/linux/</link><description>Recent content in Linux on Shyam Jos</description><generator>Hugo</generator><language>en</language><copyright>© Shyam Jos, Built with Hugo ♡</copyright><lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shyamjos.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>How to batch resize and compress images in linux</title><link>https://shyamjos.com/batch-resize-compress-photos-linux/</link><pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate><guid>https://shyamjos.com/batch-resize-compress-photos-linux/</guid><description/></item><item><title>Ripping DVDs in linux with FFmpeg</title><link>https://shyamjos.com/easily-rip-dvds-in-linux-with-ffmpeg/</link><pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate><guid>https://shyamjos.com/easily-rip-dvds-in-linux-with-ffmpeg/</guid><description/></item><item><title>How to create or restore efi partition in ubuntu</title><link>https://shyamjos.com/how-to-restore-or-create-efi-partition-in-ubuntu/</link><pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate><guid>https://shyamjos.com/how-to-restore-or-create-efi-partition-in-ubuntu/</guid><description/></item><item><title>How to reinstall grub2 efi bootloader on ubuntu</title><link>https://shyamjos.com/reinstall-grub2-efi-bootloader-ubuntu/</link><pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate><guid>https://shyamjos.com/reinstall-grub2-efi-bootloader-ubuntu/</guid><description/></item><item><title>Monitoring Linux Server with an Arduino</title><link>https://shyamjos.com/monitoring-linux-server-with-arduino/</link><pubDate>Sat, 03 Sep 2016 00:00:00 +0000</pubDate><guid>https://shyamjos.com/monitoring-linux-server-with-arduino/</guid><description/></item><item><title>Update Raspberry pi firmware from Kali Linux</title><link>https://shyamjos.com/how-to-update-raspberrypi-firmware-in-kali-linux/</link><pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate><guid>https://shyamjos.com/how-to-update-raspberrypi-firmware-in-kali-linux/</guid><description/></item><item><title>Installing Jekyll on fedora</title><link>https://shyamjos.com/installing-jekyll-on-fedora/</link><pubDate>Fri, 16 Jan 2015 00:00:00 +0000</pubDate><guid>https://shyamjos.com/installing-jekyll-on-fedora/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Shyam Jos</title><link>https://shyamjos.com/tags/linux/</link><description>Recent content in Linux on Shyam Jos</description><generator>Hugo</generator><language>en</language><copyright>© Shyam Jos, Built with Hugo ♡</copyright><lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://shyamjos.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>How to batch resize and compress images in linux</title><link>https://shyamjos.com/batch-resize-compress-photos-linux/</link><pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate><guid>https://shyamjos.com/batch-resize-compress-photos-linux/</guid><description>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/ImageMagick/retro-camera-black.jpg" alt="retro cmaer" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+
+In this tutorial I will show you how to batch resize and compress images in Ubuntu or in any other Linux distros(debian,arch and fedora).&lt;/p>
+&lt;p>&amp;lsquo;Convert&amp;rsquo; command is a very powerful image manipulation utility which comes preinstalled in almost all Linux distributions (ubuntu,debian,arch and fedora) and it is a part of ImageMagick software suite.&lt;/p>
+&lt;h2 id="check-if-convert-command-is-available-on-your-linux-distro" class="relative group">Check if convert command is available on your Linux distro &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#check-if-convert-command-is-available-on-your-linux-distro" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code> convert -version
+&lt;/code>&lt;/pre>&lt;p>output:&lt;/p>
+&lt;p>Version: ImageMagick 6.9.7-4 Q16 x86_64 20170114 &lt;a href="http://www.imagemagick.org" target="_blank" rel="noreferrer">http://www.imagemagick.org&lt;/a>
+Copyright: © 1999-2017 ImageMagick Studio LLC&lt;/p>
+&lt;p>If the above command is not found on your Linux distro you can install it by typing the below command.&lt;/p>
+&lt;h2 id="install-convert-tool-on-ubuntu--debian" class="relative group">Install convert tool on Ubuntu / Debian &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-convert-tool-on-ubuntu--debian" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code> sudo apt-get install imagemagick
+&lt;/code>&lt;/pre>&lt;h2 id="install-convert-tool-on-fedora" class="relative group">Install convert tool on fedora &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-convert-tool-on-fedora" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code> sudo dnf install imagemagick
+&lt;/code>&lt;/pre>&lt;h2 id="install-convert-tool-on-arch" class="relative group">Install convert tool on arch &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-convert-tool-on-arch" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code> sudo pacman -S imagemagick
+&lt;/code>&lt;/pre>&lt;p>Note: &lt;em>It&amp;rsquo;s always good idea take backup of your images before running convert command.&lt;/em>&lt;/p>
+&lt;h2 id="batch-resize-and-compress-images-with-convert-command" class="relative group">Batch resize and compress images with convert command &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#batch-resize-and-compress-images-with-convert-command" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Below command will resize and compress all images ending with .jpg extension in a &amp;lsquo;for loop&amp;rsquo; and save the compressed/resized image as &amp;lsquo;filename-Optimized.jpg&amp;rsquo;.&lt;/p>
+&lt;p>&lt;strong>&amp;ndash;quality :&lt;/strong> this option is used to set the image compression level in percentage&lt;/p>
+&lt;p>&lt;strong>-resize :&lt;/strong> this option is used to resize the image to a given resolution , You can use -resize option with width ( -resize 1600x ) only or both width and height ( -resize 1600×900), In both cases convert command will automatically adjust the given resolution to get optimum aspect ratio so you don&amp;rsquo;t have to worry about stretched images.&lt;/p>
+&lt;p>Note: some jpeg image extensions may end with .JPG (in capital letters) ,Since Linux is case-sensitive you may need to adjust the bash script accordingly.&lt;/p>
+&lt;p>Open terminal and cd into the directory containing your photos and execute below command&lt;/p>
+&lt;pre tabindex="0">&lt;code> mkdir photos-Optimized;for photos in *.JPG;do convert -verbose &amp;#34;$photos&amp;#34; -quality 85% -resize 1600x900 ./photos-Optimized/&amp;#34;$photos-Optimized.jpg&amp;#34;; done
+&lt;/code>&lt;/pre>&lt;p>Voilà! Now you have successfully resized/compressed images, You can see the optimized images in the photos-Optimized directory.&lt;/p></description></item><item><title>Ripping DVDs in linux with FFmpeg</title><link>https://shyamjos.com/easily-rip-dvds-in-linux-with-ffmpeg/</link><pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate><guid>https://shyamjos.com/easily-rip-dvds-in-linux-with-ffmpeg/</guid><description>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/dvd-ripping/dvd-linux.webp" alt="dvd ripping in linux" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+
+In this tutorial, I will show you a simple way to RIP DVD into a single file using FFmpeg command line tool in Linux.&lt;/p>
+&lt;h2 id="install-ffmpeg-in-ubuntudebianlinux-mint" class="relative group">Install FFmpeg in Ubuntu/Debian/Linux Mint &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-ffmpeg-in-ubuntudebianlinux-mint" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code>sudo apt-get install ffmpeg
+&lt;/code>&lt;/pre>&lt;p>Now copy contents of your DVD to local directory and cd into &lt;strong>VIDEO_TS&lt;/strong> directory&lt;/p>
+&lt;p>&lt;strong>Note:&lt;/strong> If you want to RIP the DVD directly without copying it to the local directory first , then you need to modify last part of the below commands to : /home/your-username/myvideo/rip.mp4&lt;/p>
+&lt;h2 id="1-rip-dvd-into-a-single-file" class="relative group">1. RIP DVD into a single file &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-rip-dvd-into-a-single-file" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Now enter below command to start ripping process in optimum quality, If you want to control the size (eg: limit size to 700MB) of the ripped file, then use the third command&lt;/p>
+&lt;pre tabindex="0">&lt;code>cat VTS_0*_*VOB | ffmpeg -i - -vcodec h264 -acodec mp2 rip.mp4
+&lt;/code>&lt;/pre>&lt;h2 id="2-rip-dvd-with-deinterlace-option" class="relative group">2. RIP DVD with deinterlace option &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-rip-dvd-with-deinterlace-option" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>If you want to enable deinterlace option run below command&lt;/p>
+&lt;pre tabindex="0">&lt;code>cat VTS_0*_*VOB | ffmpeg -i - -vf yadif -vcodec h264 -acodec mp2 rip.mp4
+&lt;/code>&lt;/pre>&lt;h2 id="3-rip-dvd-with-quality-option" class="relative group">3. RIP DVD with quality option &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-rip-dvd-with-quality-option" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Use below command to reduce size and quality of output file, Here the &amp;lsquo;-crf&amp;rsquo; option sets the quality of the ripped file. The range of the CRF scale is 0&amp;ndash;51, where 0 is lossless , 23 is the default, and 51 is the worst quality possible.&lt;/p>
+&lt;pre tabindex="0">&lt;code>cat VTS_0*_*VOB | ffmpeg -i - -c:v libx264 -crf 23 rip.mp4
+&lt;/code>&lt;/pre>&lt;p>Above command will read all video files in a folder and pipe the stream to FFmpeg command, after the successful completion of the command you can find the ripped file with name &lt;code>rip.mp4&lt;/code>&lt;/p></description></item><item><title>How to create or restore efi partition in ubuntu</title><link>https://shyamjos.com/how-to-restore-or-create-efi-partition-in-ubuntu/</link><pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate><guid>https://shyamjos.com/how-to-restore-or-create-efi-partition-in-ubuntu/</guid><description>&lt;h2 id="what-type-of-file-system-is-used-in-efi-partition-" class="relative group">What Type of file system is used in EFI partition ? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#what-type-of-file-system-is-used-in-efi-partition-" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>EFI partition in Ubuntu is basically a FAT partition with label &amp;ldquo;EFI&amp;rdquo;&lt;/p>
+&lt;h2 id="how-to-create--restore-an-efi-partition-" class="relative group">How to create / restore an efi partition ? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-to-create--restore-an-efi-partition-" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Just reformat or create a normal FAT file system partition with a size of 512MB (can be any size) and label it as &amp;ldquo;EFI&amp;rdquo;, You can use fdisk command if you are comfortable with cli or you can use gparted tool from a live media of Ubuntu to create new efi partition.&lt;/p>
+&lt;h2 id="how-can-i-reinstall-grub-efi-bootloader-after-creating-or-restoring-efi-partition-" class="relative group">How can I reinstall Grub efi bootloader after creating or restoring efi partition ? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-can-i-reinstall-grub-efi-bootloader-after-creating-or-restoring-efi-partition-" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>After restoring or formatting efi partition your system will not boot since bootloader needs to be reinstalled on the new efi partition, follow this &lt;a href="https://shyamjos.com/reinstall-grub2-efi-bootloader-ubuntu/" target="_blank" rel="noreferrer">tutorial to reinstall grub efi bootloader in your Ubuntu&lt;/a> system.&lt;/p></description></item><item><title>How to reinstall grub2 efi bootloader on ubuntu</title><link>https://shyamjos.com/reinstall-grub2-efi-bootloader-ubuntu/</link><pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate><guid>https://shyamjos.com/reinstall-grub2-efi-bootloader-ubuntu/</guid><description>&lt;p>In this tutorial I will show you how to reinstall grub2 bootloader on a ubuntu system with efi partition.&lt;/p>
+&lt;h2 id="boot-from-a-live-usbcd" class="relative group">Boot from a live usb/cd &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#boot-from-a-live-usbcd" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Boot from the ubuntu live usb/cd and select the option &amp;ldquo;try ubuntu without installing&amp;rdquo;&lt;/p>
+&lt;h2 id="check-if-efi-is-enabled-in-bios" class="relative group">Check if EFI is enabled in bios &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#check-if-efi-is-enabled-in-bios" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Enter below command in terminal\&lt;/p>
+&lt;pre tabindex="0">&lt;code>[ -d /sys/firmware/efi ] &amp;amp;&amp;amp; echo &amp;#34;EFI boot on HDD&amp;#34; || echo &amp;#34;Legacy boot on HDD&amp;#34;
+&lt;/code>&lt;/pre>&lt;p>If you see &amp;ldquo;EFI boot on HDD&amp;rdquo; Message then you are already running on efi mode or if you see &amp;ldquo;Legacy boot on HDD&amp;rdquo; message then your system is not running on efi mode, you must change the boot options to efi before proceeding to next step.&lt;/p>
+&lt;p>Note: First you have to find the partition name where ubuntu is installed, You can use &amp;ldquo;sudo fdisk -l&amp;rdquo; to list all hard disks and partitions in your computer. In my case /dev/sda is the name of my harddisk, /dev/sda2 is the partition where ubuntu is installed (root partition) and /dev/sda1 was the efi partition.&lt;/p>
+&lt;h2 id="mount-and-chroot-into-local-filesystem" class="relative group">Mount and chroot into local filesystem &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#mount-and-chroot-into-local-filesystem" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Note: You have to replace the sda with device name of your HDD, In most cases it is sda, assuming that you have only one hard disk installed.&lt;/p>
+&lt;p>Note: If you get any errors while trying to mount your efi partition (&lt;code>/dev/sda1&lt;/code>), You may need to reformat your efi partition, In case if it got corrupted or if you accidentally formatted it. &lt;a href="https://linuxsuperuser.com/how-to-restore-or-create-efi-partition-in-ubuntu/" target="_blank" rel="noreferrer">Follow this tutorial to restore or reformat your efi partition&lt;/a>.&lt;/p>
+&lt;p>Open terminal and enter below command\&lt;/p>
+&lt;pre tabindex="0">&lt;code>sudo mount /dev/sda2 /mnt\
+sudo mount /dev/sda1 /mnt/boot/efi\
+for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done\
+sudo chroot /mnt\
+grub-install /dev/sda\
+update-grub\
+&lt;/code>&lt;/pre>&lt;p>Important : &lt;em>&lt;strong>use blkid command to check UUID of your efi partition, check if it matches the value in your /etc/fstab entry , otherwise ubuntu will not boot , You may need to update the UUID especially if you have formatted EFI partition . (Eg: sudo blkid /dev/sda1)&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>That&amp;rsquo;s it! Now reboot to test the bootloader&lt;/p></description></item><item><title>Monitoring Linux Server with an Arduino</title><link>https://shyamjos.com/monitoring-linux-server-with-arduino/</link><pubDate>Sat, 03 Sep 2016 00:00:00 +0000</pubDate><guid>https://shyamjos.com/monitoring-linux-server-with-arduino/</guid><description>&lt;p>As usual I was so bored and wanted to build something cool on this weekend, So I ended up building an Arduino based Linux server monitoring solution for monitoring my Linux VPS.&lt;/p>
+&lt;p>The idea was Simple, use an Arduino Ethernet module to make a get request to the php script hosted on the server and parse the response data (free -m,df -h,uptime) and display it on the LCD screen every one minute.&lt;/p>
+&lt;p>And here is the demo of Arduino Linux monitor in action&lt;/p>
+&lt;h2 id="demo" class="relative group">Demo &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#demo" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/arduino-monitor/arduino-lcd.gif" alt="Arduino lcd" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>If you are interested in this project you can download the Arduino sketch from my &lt;a href="https://github.com/shyamjos/Arduino_ServerMon" target="_blank" rel="noreferrer">github page&lt;/a>.&lt;/p>
+&lt;h2 id="todo-list" class="relative group">Todo List &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#todo-list" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;ul>
+&lt;li>Buzzer Notification upon increase in memory/cpu load..etc&lt;/li>
+&lt;li>Use json instead of php page&lt;/li>
+&lt;/ul></description></item><item><title>Update Raspberry pi firmware from Kali Linux</title><link>https://shyamjos.com/how-to-update-raspberrypi-firmware-in-kali-linux/</link><pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate><guid>https://shyamjos.com/how-to-update-raspberrypi-firmware-in-kali-linux/</guid><description>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/rpi/rpi-firmware.webp" alt="flashing rpi" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;p>We can easily update Raspberry pi firmware in raspbian by running the command rpi-update, But in kali linux we dont have rpi-update command by default.
+&lt;br>&lt;br>
+To install the rpi-update in kali, run the following command:&lt;/p>
+&lt;pre tabindex="0">&lt;code>sudo curl -L --output /usr/bin/rpi-update https://raw.githubusercontent.com/Hexxeh/rpi-update/master/rpi-update &amp;amp;&amp;amp; sudo chmod +x /usr/bin/rpi-update
+&lt;/code>&lt;/pre>&lt;p>Then, to update your rpi firmware, run the following command:&lt;/p>
+&lt;pre tabindex="0">&lt;code>sudo rpi-update
+&lt;/code>&lt;/pre>&lt;p>Now restart your rpi to new firmware to take effect.
+&lt;br>
+For more Expert options visit the &lt;a href="https://github.com/Hexxeh/rpi-update" target="_blank" rel="noreferrer">rpi-update project page&lt;/a>&lt;/p></description></item><item><title>Installing Jekyll on fedora</title><link>https://shyamjos.com/installing-jekyll-on-fedora/</link><pubDate>Fri, 16 Jan 2015 00:00:00 +0000</pubDate><guid>https://shyamjos.com/installing-jekyll-on-fedora/</guid><description>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/misc/jekyll-logo-linux.png" alt="jekyll logo linux" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+
+Follow below steps to install jekyll on fedora&lt;/p>
+&lt;h2 id="install-jekyll" class="relative group">Install jekyll &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#install-jekyll" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code>sudo dnf install ruby-devel redhat-rpm-config jekyll
+&lt;/code>&lt;/pre>&lt;h2 id="optional-packages" class="relative group">Optional packages &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#optional-packages" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;pre tabindex="0">&lt;code>sudo dnf group install &amp;#34;C Development Tools and Libraries&amp;#34;
+sudo dnf install rubygems-devel nodejs bundler
+&lt;/code>&lt;/pre></description></item></channel></rss>

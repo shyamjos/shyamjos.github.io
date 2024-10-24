@@ -1,1 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monitoring on Shyam Jos</title><link>https://shyamjos.com/tags/monitoring/</link><description>Recent content in Monitoring on Shyam Jos</description><generator>Hugo</generator><language>en</language><copyright>© Shyam Jos, Built with Hugo ♡</copyright><lastBuildDate>Sun, 14 May 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://shyamjos.com/tags/monitoring/index.xml" rel="self" type="application/rss+xml"/><item><title>A better email template for icinga2</title><link>https://shyamjos.com/icinga2-html-template/</link><pubDate>Sun, 14 May 2017 00:00:00 +0000</pubDate><guid>https://shyamjos.com/icinga2-html-template/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monitoring on Shyam Jos</title><link>https://shyamjos.com/tags/monitoring/</link><description>Recent content in Monitoring on Shyam Jos</description><generator>Hugo</generator><language>en</language><copyright>© Shyam Jos, Built with Hugo ♡</copyright><lastBuildDate>Sun, 14 May 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://shyamjos.com/tags/monitoring/index.xml" rel="self" type="application/rss+xml"/><item><title>A better email template for icinga2</title><link>https://shyamjos.com/icinga2-html-template/</link><pubDate>Sun, 14 May 2017 00:00:00 +0000</pubDate><guid>https://shyamjos.com/icinga2-html-template/</guid><description>&lt;p>I have created a very simple HTML email alert Template for Icinga 2 to replace the default boring text-based email alert. This template can be easily installed by replacing existing alert scripts inside /etc/icinga2/scripts.&lt;/p>
+&lt;p>&lt;strong>Update:&lt;/strong> I have replaced mail command with mutt due to an incompatibility of options among different Linux distributions. Also, I have added new color highlight feature for different states (ok=green,warning=orange and critical=red).&lt;/p>
+&lt;h2 id="screenshots" class="relative group">Screenshots &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#screenshots" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/icinga2/html-template-for-icinga.png" alt="Icinga2 email alert screenshot" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+
+
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/icinga2/icinga-2-html-email-template.png" alt="Icinga2 email alert screenshot" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+
+
+
+
+
+
+
+
+ 
+ 
+&lt;figure>&lt;img src="https://shyamjos.com/assets/img/icinga2/icinga-html-email.png" alt="Icinga2 email alert screenshot" class="mx-auto my-0 rounded-md" />
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="prerequisite" class="relative group">Prerequisite &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#prerequisite" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;p>Make Sure mutt package is installed on your server&lt;/p>
+&lt;h2 id="how-to-install" class="relative group">How to install &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100">&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#how-to-install" aria-label="Anchor">#&lt;/a>&lt;/span>&lt;/h2>&lt;ul>
+&lt;li>Backup existing script files (mail-service-notification.sh and mail-host-notification.sh) inside /etc/icinga2/scripts&lt;/li>
+&lt;li>Download the scripts from this github repo and edit the “Variables for HTML Template” section in both scripts&lt;/li>
+&lt;li>Now replace the existing scripts with the new ones and Send a custom notification to test new HTML email template.&lt;/li>
+&lt;/ul>
+&lt;p>If you have any issues, please &lt;a href="https://github.com/shyamjos/HTML-email-template-for-Icinga-2/issues" target="_blank" rel="noreferrer">report it here&lt;/a>&lt;/p></description></item></channel></rss>
