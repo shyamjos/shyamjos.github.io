@@ -14,6 +14,7 @@ weight = 1
   bio = "Documenting my adventures in Linux, Kubernetes, and DevOps."
   links = [
     { linkedin = "https://linkedin.com/in/shyamjos" },
+    { mastodon = "https://fosstodon.org/@shyamjos" },
     { github = "https://github.com/shyamjos" },
     { youtube = "https://www.youtube.com/c/shyamjos" },  
     { rss = "https://shyamjos.com/posts/index.xml" },
