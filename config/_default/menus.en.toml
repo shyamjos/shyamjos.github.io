@@ -1,5 +1,5 @@
 [[main]]
-name = "Posts"
+name = "Blog"
 pageRef = "posts"
 weight = 10
 
