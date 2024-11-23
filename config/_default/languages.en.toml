@@ -14,10 +14,11 @@ weight = 1
   bio = "Documenting my adventures in Linux, Kubernetes, and DevOps."
   links = [
     { linkedin = "https://linkedin.com/in/shyamjos" },
+    { bluesky = "https://bsky.app/profile/shyamjos.com" },
     { mastodon = "https://fosstodon.org/@shyamjos" },
     { github = "https://github.com/shyamjos" },
     { youtube = "https://www.youtube.com/c/shyamjos" },  
-    { rss = "https://shyamjos.com/posts/index.xml" },
     { email = "https://us11.list-manage.com/contact-form?u=965be0bf90a8bd031bf02e3d2&form_id=a133e5f84cf9f375c3001b62714fa3df" },
     { x-twitter = "https://twitter.com/shyamjose" },
+    { rss = "https://shyamjos.com/posts/index.xml" },
   ]
