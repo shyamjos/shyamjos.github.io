@@ -5,13 +5,13 @@ weight = 1
 
 [params]
   dateFormat = "2 January 2006"
-  description = "Hi I'm Shyam Jos, documenting my adventures in Linux, Kubernetes, and DevOps."
+  description = "Hi I'm Shyam Jos, documenting my adventures in Linux, Kubernetes, DevOps and IoT."
 
 [params.author]
   name = "Shyam Jos"
   image = "img/shyam_jos_photo.jpeg"
-  headline = "Welcome!👋 I'm Shyam Jos, documenting my adventures in Linux, Kubernetes, and DevOps."
-  bio = "Documenting my adventures in Linux, Kubernetes, and DevOps."
+  headline = "Welcome!👋 I'm Shyam Jos, documenting my adventures in Linux, Kubernetes, DevOps and Hardware Projects."
+  bio = "Documenting my adventures in Linux, Kubernetes, DevOps and Hardware Projects."
   links = [
     { linkedin = "https://linkedin.com/in/shyamjos" },
     { bluesky = "https://bsky.app/profile/shyamjos.com" },

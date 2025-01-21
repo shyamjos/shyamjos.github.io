@@ -6,11 +6,10 @@ languageCode = "en"
 DefaultContentLanguage = "en"
 enableRobotsTXT = true
 summarylength = 2000
-paginate = 10
+paginate = 12
 copyright = "© Shyam Jos, Built with Hugo ♡"
 enableInlineShortcodes = true
 enableEmoji = true
-
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
